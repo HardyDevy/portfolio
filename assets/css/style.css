@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Tenon", monospace;
   color: #0d1e2d;
 }
 
@@ -29,7 +29,8 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Raleway", sans-serif;
+  font-family: "Tenon";
+  font-weight: bold;
 }
 
 .section {
@@ -319,6 +320,13 @@ h6,
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+}
+
+.quickFixNavSingle {
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  text-align:left;
+  padding-left: 2rem;
 }
 
 @-webkit-keyframes animate-loading {

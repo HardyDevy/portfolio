@@ -331,6 +331,34 @@ h6,
   padding-left: 2rem;
 }
 
+.quickFixWorkSectionTop {
+  padding-top: 1rem !important;
+  padding-bottom: 5rem !important;
+  
+}
+.quickFixWorkSectionbottom {
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.quickFixStickyText {
+  margin-left: 1rem;
+}
+
+.setServicesSize {
+  min-height: 4rem;
+}
+
+.setTitleColor {
+  color:#000;
+}
+
+.setContact {
+  background-color: none;
+  background: none;
+  border: none;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);

@@ -29,56 +29,17 @@
 
 <body>
 
-  <!-- ======= Navbar ======= -->
-  <!-- <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 d-none d-md-block  mr-auto">
-          <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
-            <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
-        </div>
-      </div>
-
-    </div>
-  </div> -->
-
-  <!-- <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">MyPortfolio.</a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a>
-    </div>
-  </nav> -->
-
   <main id="main">
 
     <!-- ======= Works Section ======= -->
     <section class="section site-portfolio">
       <div class="container">
-        <div class="row mb-5 align-items-center">
+        <div class="row mb-5 align-items-center centerTextMobile">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
             <h2>Hi! I'm Devon Hardy</h2>
             <p class="mb-0">Graphic &amp; Web Designer</p>
           </div>
-          <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 col-lg-6 text-lg-end" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
               <a href="#" data-filter="*" class="active">All</a>
               <a href="#" data-filter=".web">Web</a>
@@ -88,18 +49,21 @@
             </div>
           </div>
         </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.html" class="item-wrap fancybox">
+
+        <div id="portfolio-grid" class="row no-gutter bg-light my-3" data-aos="fade-up" data-aos-delay="200">
+          
+          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single-russettpr.html" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Coastal</h3>
-                <span>Brand Design Concept</span>
+                <h3>Russett PR</h3>
+                <span>Graphic Design and PR</span>
               </div>
-              <img class="img-fluid" src="assets/img/coastal.png">
+              <img class="img-fluid" src="assets/img/russettpr-blackbg.png">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.html" class="item-wrap fancybox">
+
+          <div class="item branding design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single-eddys.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Eddy's Restaraunt</h3>
                 <span>Brand Design Concept</span>
@@ -107,7 +71,38 @@
               <img class="img-fluid" src="assets/img/eddysbusinesscard.jpg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Manchester United Tribute</h3>
+                <span>Web Design</span>
+              </div>
+              <img class="img-fluid" src="assets/img/manubadgedark.png">
+            </a>
+          </div>
+
+          <div class="item photography design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single-OCC.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>SUNY OCC</h3>
+                <span>Graphic Design & Photography</span>
+              </div>
+              <img class="img-fluid" src="assets/img/DSC_0015 copy.jpg">
+            </a>
+          </div>
+
+          <div class="item branding design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single-coastal.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Coastal</h3>
+                <span>Brand Design Concept</span>
+              </div>
+              <img class="img-fluid" src="assets/img/coastal.png">
+            </a>
+          </div>
+
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
             <a href="work-single-photography.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Personal Projects</h3>
@@ -116,33 +111,18 @@
               <img class="img-fluid" src="assets/img/evan.JPG">
             </a>
           </div>
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.html" class="item-wrap fancybox">
+
+          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+            <a href="work-single-3DArt.html" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Russett PR</h3>
-                <span>Graphic Design and PR Intern</span>
+                <h3>3D Art</h3>
+                <span>3D Renders and Design</span>
               </div>
-              <img class="img-fluid" src="assets/img/russettpr-blackbg.png">
+              <img class="img-fluid" src="assets/img/HouseWith2More copy 2.png">
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>SUNY OCC</h3>
-                <span>Graphic Design & Photography</span>
-              </div>
-              <img class="img-fluid" src="assets/img/SUNY OCC Edited Photos/DSC_0015 copy.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Cool</h3>
-                <span>Cool AF</span>
-              </div>
-              <img class="img-fluid" src="assets/img/cool.jpg">
-            </a>
-          </div>
+
+          
         </div>
       </div>
     </section><!-- End  Works Section -->
@@ -242,64 +222,17 @@
         </div>
       </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section class="section pt-0">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Jean Hicks</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Chris Stanworth</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div> -->
-    <!-- </section>End Testimonials Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-          -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+
         </div>
         <div class="col-sm-6 social text-md-end">
           <a href="#"><span class="bi bi-twitter"></span></a>
@@ -310,8 +243,6 @@
       </div>
     </div>
   </footer>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

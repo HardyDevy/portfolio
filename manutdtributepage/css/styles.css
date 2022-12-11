@@ -1,0 +1,230 @@
+
+html {
+	font-size: 62.5%;
+}
+img {
+	width: 100%;
+	height: auto;
+  display: flex;
+  align-items: center;
+}
+body {
+  color: #444;
+  background-color: rgb(16, 16, 16);
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif !important;
+}
+p {
+  margin-bottom: .67em;
+}
+.sectiontext{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.logo{
+  width: 9%;
+}
+
+li {
+  margin: .5em auto;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1em 0 1em 0;
+  margin: auto 1em;
+  color: #D0D0D0;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+/*-- Nav Styles--*/
+nav ul {
+  width: 510px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0.25em 0em;
+  margin: 0 auto;
+  font-weight: bold;
+}
+nav a:link, nav a:visited {
+  color: rgb(244, 244, 244);
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: rgb(224, 224, 224);
+  text-decoration: underline;
+}
+nav a.active {
+  color: rgb(236, 236, 222);
+}
+
+footer a:link, footer a:visited {
+  color: #D0D0D0;
+  text-decoration: none;
+}
+footer a:hover, footer a:active  {
+  color: #D0D0D0;
+  text-decoration: underline;
+}
+/*-- Hero Unit Styles--*/
+header {
+  margin: 0 auto;
+}
+header img,figure {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: .35em;
+  color:rgb(240, 240, 240);
+  background-color: #d02929;
+}
+.small {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-variant-caps: all-small-caps;
+  padding-bottom: 0em;
+}
+.quotecontainer {
+  margin: 0em;
+  /* padding: .5rem; */
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: grid;
+  grid-gap: .5rem;
+
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(17,17,17);
+}
+.quote {
+  width: 1fr;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  line-height: 1.9em;
+  font-weight: bold;
+  font-size: 17px;
+  color: #b1b1b1;
+}
+
+header h3 {
+  width: 50%;
+}
+.title {
+  color: #d02929;
+}
+
+/*-- Body Styles --*/
+section {
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.odd {
+  text-align: left;
+  align-items: center;
+  background-color: #e5e5e5;
+  /* grid-template-columns: 1fr; */
+}
+section.even {
+  text-align: left;
+  align-items: center;
+  background-color: #d6d6d6;
+  /* grid-template-columns: 1fr; */
+}
+
+.body-outer {
+  /* order: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-inner {
+  max-width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 90%;
+}
+
+.morebutton {
+  cursor: pointer;
+  color: white;
+  background-color: #d02929;
+  border: none;
+  border-radius: 10rem;
+  margin-top: 2rem;
+  padding: .75rem .75rem .75rem .75rem;
+  font-size: 90%;
+}
+
+.body-images{
+  height: auto;
+  width: 90%;
+  margin: 2em 2em;
+  border-radius: 1rem;
+}
+
+/*-- Article Styles--*/
+article {
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0em auto;
+}
+
+.pagination {
+  display: flex;
+  margin-bottom: .5em;
+  margin-top: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+a.button {
+  border: 2px solid #c2c2c2;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #c2c2c2;
+  border-radius: 300px;
+  border-width: 4px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 4px solid #939393;
+  text-decoration: none;
+  color: #939393;
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (min-width: 768px) {
+  header {width: 100%;}
+  article {width: 100%;}
+  .glass-outer {order: inherit;}
+
+}
+
+@media screen and (max-width: 768px) {
+  body {width: 98vw;}
+  nav {display: flex; flex-direction: row;}
+  .quotecontainer{grid-template-columns: 1fr;}
+  img {align-items: center;}
+  section{grid-template-columns: 1fr;}
+  .body-outer{order: 1;}
+  .body-inner{padding:0;padding-bottom: 3rem;}
+  
+}

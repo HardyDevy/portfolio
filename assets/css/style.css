@@ -185,11 +185,13 @@ h6,
 
 .readmore {
   display: inline-block;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 10px 15px;
   font-size: 12px;
-  text-transform: uppercase;
-  color: #000;
+  /* text-transform: uppercase; */
+  color: #fff;
+  background-color: rgb(37, 37, 37);
+  border: none;
   transition: 0.2s all ease;
   font-weight: 700;
 }
@@ -201,9 +203,9 @@ h6,
 }
 
 .readmore:hover {
-  color: #fff;
+  color: #000;
   text-decoration: none;
-  background: #000;
+  background-color: rgb(238, 238, 238);
 }
 
 .testimonials-slider .swiper-pagination {

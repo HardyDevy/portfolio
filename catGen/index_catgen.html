@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catGenerator</title>
+    <link rel="stylesheet" href="https://use.typekit.net/emz3evy.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
+    <link rel="stylesheet" href="styles/min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+  </head>
+  <body>
+    <main>
+
+      <section class="top">
+        <p></p>
+        <p></p>
+        <div>
+          <h1 class="topheader">The Cat Generator!</h1>
+          <div class="qp">
+            <img id="newcat" src="img/Pictures of Cats/cat1.jpeg" alt="cat" />
+            <blockquote class="quote" id="newquote">This is a cool cat</blockquote>
+          </div>
+          <div class="buttongrid">
+            <button id="newCat"><nobr>New Cat!</nobr></button>
+            <button id="saveCat"><nobr>Save Cat!</nobr></button>
+          </div>
+          
+            <select name="menu" id="select" class="selecter">
+              <option value="All">Cat Type: All</option>
+              <option value="positive">Cat Type: Positives</option>
+              <option value="insults">Cat Type: Insults</option>
+              <option value="kittyfacts">Cat Type: Facts</option>
+              <option value="opinions">Cat Type: Opinions</option>
+              <option value="please">Cat Type: Please</option>
+              <option value="sounds">Cat Type: Sounds</option>
+            </select>
+        </div>
+      </section>
+
+    <section class="bottom">
+      <h1 class="housetext">Cat House</h1>
+     
+      <div class="bottomgrid" id="saved">
+      </div>
+    </section>
+
+    </main>
+    <!-- loads javascript --> 
+    <script src='js/data.js'></script> 
+    <script src='js/main.js'></script> 
+    
+  </body>
+</html>

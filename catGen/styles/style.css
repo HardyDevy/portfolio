@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(105, 215, 255);
+    background-image:url("../img/2210.jpg");
+    background-size:115rem;
+    background-position: top;
+
+    font-family: bd-supper, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    height: 20rem ;
+    width: 20rem ;
+}
+
+h1 {
+    font-size: 2rem;
+}
+.topheader{
+    background-color: rgb(246, 250, 254);
+    padding: .5rem;
+    padding-top: .75rem;
+    margin-top: 0;
+    border-radius: 10px;
+
+}
+.housetext {
+color: aliceblue;
+margin-top: 0;
+}
+
+.selecter {
+    text-align: center;
+    background-color: pink;
+    border:none;
+    border-radius: 10px;
+    padding: 1rem 8rem;
+    font-family: "bd-supper", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor:pointer;
+}
+.selecter::after{
+    background-color: rgb(226, 159, 170);
+}
+
+
+section.top {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section.bottom {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    min-height: 25rem;
+    padding: 2rem;
+    margin: 5%;
+    margin-top: 1.5rem;
+    background-color:rgb(90, 70, 48) ;
+    border-radius: 20px;
+    
+  }
+.bottomgrid{
+    display: grid;
+    grid-gap: 2rem;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+}
+
+.qp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #faebd7;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.qpbottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #faebd7;
+    border-radius: 20px;
+    padding: 1.5rem;
+    padding-bottom: .5rem;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20rem;
+    min-height: 2.65rem;
+    margin: 1rem 0 0 0;
+}
+
+.buttongrid {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+option {
+    font-family: "bd-supper", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button {
+    background-color: pink;
+    border-radius: 10px;
+    border:none;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    font-family: "bd-supper", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+button:hover{
+    background-color: rgb(226, 159, 170);
+}
+button.circle {
+    background-color: #e3d2bb;
+    border-radius: 50%;
+    padding: .5rem .75rem .5rem .75rem ;
+    margin: 0;
+    margin-left: 100%;
+    font-size:small;
+    font-weight:bold;
+    color: #a39178;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button.circle:hover {
+    background-color: #c2af94;
+}
+
+@media only screen and (max-width: 720px) {
+section.bottom {
+    padding: 1rem;
+    
+}
+.bottomgrid{
+    grid-template-columns: auto;
+}
+img{
+    height: 15rem;
+    width: 15rem;
+}
+.selecter {
+    padding: 1rem 5rem;
+}
+}

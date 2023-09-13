@@ -13,7 +13,7 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/dzb1cje.css">
   <!-- Vendor CSS Files -->
@@ -36,114 +36,120 @@
       <div class="container">
         <div class="row mb-5 align-items-center centerTextMobile">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <a href="contact.html" class="setTitleColor"><h2>Hi! I'm Devon Hardy</h2></a>
-            <p class="mb-0">Graphic &amp; Web Designer</p>
+            <a href="about.html" ><h2 class="nameTitleThings" >Hi! I'm Devon Hardy</h2></a>
+            <p class="mb-0 subtitletext">Graphic &amp; Web Designer</p>
           </div>
           <div class="row-md-30 col-lg-6 text-lg-end" data-aos="fade-up" data-aos-delay="100">
             
             <div id="filters" class="filters">
-              <button class="btn setContact" onclick="window.open('contact.html')"> Contact</button>
-              <h8 href="#">|</h8>
+              <div class="shower">
+                <button class="btn setContact mb-4 mt-3" onclick="window.open('about.html','_self')"> About</button>
+              <button class="btn setContact mb-4 mt-3" onclick="window.open('contact.html','_self')"> Contact</button>
+              </div>
+              
+              <button class="btn setContact hider" onclick="window.open('about.html','_self')"> About</button>
+              <button class="btn setContact hider" onclick="window.open('contact.html','_self')"> Contact</button>
+            
+              <h8 class="hider" href="#">|</h8>
               <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".web">Web</a>
               <a href="#" data-filter=".design">Design</a>
-              <a href="#" data-filter=".branding">Branding</a>
+              <a href="#" data-filter=".web">Web</a>
               <a href="#" data-filter=".photography">Photography</a>
             </div>
           </div>
         </div>
 
-        <div id="portfolio-grid" class="row no-gutter bg-light my-3" data-aos="fade-up" data-aos-delay="200">
+        <div id="portfolio-grid" class="row no-gutter grid_color" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="item design web branding col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item design web branding col-lg-4">
             <a href="work-single-vipstructures.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>VIP Structures</h3>
-                <span>Marketing</span>
+                <span>Graphic Design and Web Design</span>
               </div>
-              <img class="img-fluid" src="assets/img/VIP_Square_lg Large.jpeg">
+              <img class="img-fluid" src="assets/img/thumbnails/VIP_Square_lg Large.jpeg">
             </a>
           </div>
 
-          <div class="item design branding col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item design branding col-lg-4">
             <a href="work-single-capstone.html" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Capstone Project</h3>
+                <h3>Senior Capstone Project</h3>
                 <span>Graphic Design and Branding</span>
               </div>
-              <img class="img-fluid" src="assets/img/CapstoneRecords_BusinessCard_front copy.png">
+              <img class="img-fluid" src="assets/img/thumbnails/capstone_rearviewposterthumbnail.png">
             </a>
           </div>
           
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item design col-lg-4">
             <a href="work-single-russettpr.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Russett PR</h3>
                 <span>Graphic Design and PR</span>
               </div>
-              <img class="img-fluid" src="assets/img/russettpr-blackbg.png">
+              <img class="img-fluid" src="assets/img/thumbnails/russettprchristmas.png">
             </a>
           </div>
 
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item web col-lg-4">
             <a href="work-single-catgen.html" class="item-wrap fancybox">
             
               <div class="work-info">
                 <h3>Cat Generator</h3>
                 <span>Web Design</span>
               </div>
-              <img class="img-fluid" src="assets/img/clouds.jpg">
+              <img class="img-fluid" src="assets/img/thumbnails/clouds.jpg">
             </a>
           </div>
 
-          <div class="item branding design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item branding design col-lg-4">
             <a href="work-single-eddys.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Eddy's Restaraunt</h3>
                 <span>Brand Design Concept</span>
               </div>
-              <img class="img-fluid" src="assets/img/eddysbusinesscard.jpg">
+              <img class="img-fluid" src="assets/img/thumbnails/eddysbusinesscard.jpg">
             </a>
           </div>
 
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item web col-lg-4">
             <a href="work-single-manutdtribute.html" class="item-wrap fancybox">
             
               <div class="work-info">
                 <h3>Manchester United Tribute</h3>
                 <span>Web Design</span>
               </div>
-              <img class="img-fluid" src="assets/img/manubadgedark.png">
+              <img class="img-fluid" src="assets/img/thumbnails/unitedtributesmalltext.png">
             </a>
           </div>
 
-          <div class="item photography design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item photography design col-lg-4">
             <a href="work-single-OCC.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>SUNY OCC</h3>
                 <span>Graphic Design & Photography</span>
               </div>
-              <img class="img-fluid" src="assets/img/DSC_0015 copy.jpg">
+              <img class="img-fluid" src="assets/img/thumbnails/DSC_0015 copy.jpg">
             </a>
           </div>
 
-          <div class="item branding design col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item branding design col-lg-4">
             <a href="work-single-coastal.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Coastal</h3>
                 <span>Brand Design Concept</span>
               </div>
-              <img class="img-fluid" src="assets/img/coastal.png">
+              <img class="img-fluid" src="assets/img/thumbnails/coastal.png">
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4 my-3">
+          <div class="item photography col-lg-4">
             <a href="work-single-photography.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Personal Projects</h3>
                 <span>Photography</span>
               </div>
-              <img class="img-fluid" src="assets/img/evan.JPG">
+              <img class="img-fluid" src="assets/img/thumbnails/toriphotothumbnail.png">
             </a>
           </div>
 
@@ -162,79 +168,7 @@
       </div>
     </section><!-- End  Works Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <section class="section quickFixWorkSectionTop">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-5">
-            <h3 class="h3 heading">Experience</h3>
-            <p>Companies I have worked with in the past.</p>
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-4 col-sm-4 col-md-1">
-            <a href="#" class="client-logo"><img src="assets/img/VIP_Square_lg Large copy.jpeg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-1">
-            <a href="#" class="client-logo"><img src="assets/img/russettprlogo.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-1">
-            <a href="#" class="client-logo"><img src="assets/img/culogo_dark.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-1">
-            <a href="#" class="client-logo"><img src="assets/img/OCC Blue Logo.png" alt="Image" class="img-fluid"></a>
-          </div>
-
-         
-        </div>
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section class="section services bg-light">
-      <div class="container bg-light">
-        <div class="row justify-content-center text-center mb-4 my-3">
-          <div class="col-5 my-3">
-            <h3 class="h3 heading">My Services</h3>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p> -->
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 setServicesSize">
-            <i class="bi bi-card-checklist"></i>
-            <h4 class="h4 mb-2">Web Design</h4>
-            <p>I have created multiple sites used to showcase information, display work, and play games.</p>
-            <ul class="list-unstyled list-line">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 setServicesSize">
-            <i class="bi bi-brightness-high"></i>
-            <h4 class="h4 mb-2">Graphic Design</h4>
-            <p>I have 6+ years experience in graphic design.</p>
-            <ul class="list-unstyled list-line">
-              <li>Adobe Photoshop</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Lightroom</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 setServicesSize">
-            <i class="bi bi-camera"></i>
-            <h4 class="h4 mb-2">Video Editing</h4>
-            <p>I have 7+ years experience in video editing.</p>
-            <ul class="list-unstyled list-line">
-              <li>Final Cut Pro</li>
-              <li>Adobe Premiere Pro</li>
-              <li>Adobe After Effects</li>
-            </ul>
-          </div>
-         
-        </div>
-      </div>
-    </section><!-- End Services Section -->
+   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -244,10 +178,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+          <p class="mb-1">&copy; Devon Hardy 2022</p>
 
         </div>
         <div class="col-sm-6 social text-md-end">
+          <a href="mailto: dghardy2020@gmail.com"><span class="bi bi-envelope"></span></a>
           <a href="https://www.instagram.com/coastahn.photos/"><span class="bi bi-instagram"></span></a>
           <a href="https://www.linkedin.com/in/devonhardy/"><span class="bi bi-linkedin"></span></a>
         </div>

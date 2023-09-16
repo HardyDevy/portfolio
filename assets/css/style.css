@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "stevie-sans", sans-serif;
   font-weight: 400;
@@ -17,6 +20,10 @@ body {
 }
 .grid_color{
   /* background-color: #efefef; */
+}
+
+nav{
+  
 }
 
 a {
@@ -29,7 +36,8 @@ p{
 }
 .subtitletext{
   font-size: large;
-
+margin: 0;
+padding: 0;
 }
 .companytext{
   padding-top: 2rem;
@@ -51,14 +59,24 @@ h6,
   font-family: "stevie-sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.h3 {
+  font-size: 20px;
+}
 
+.h4 {
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 28px;
 }
 
 .nameTitleThings{
   font-family: "blanket", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 6.5rem;
   color: #000;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important; 
@@ -66,6 +84,19 @@ h6,
 
 .section {
   padding: 3rem 0;
+}
+.mainpage{
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+.workbelow{
+  text-align: end;
+  padding-right: 3vh;
+  margin-bottom: 15vh;
+}
+.workssection{
+  padding-top: 2.5rem;
 }
 
 .filters a {
@@ -182,18 +213,6 @@ h6,
   visibility: visible;
 }
 
-.h3 {
-  font-size: 20px;
-}
-
-.h4 {
-  font-size: 16px;
-}
-
-.heading {
-  font-size: 28px;
-}
-
 .sticky-content {
   position: sticky;
   position: -webkit-sticky;
@@ -215,22 +234,6 @@ h6,
   width: 10px;
   height: 2px;
   background: #000;
-}
-
-.form-control {
-  border-radius: 0;
-  background: #f8f9fa;
-  border: 1px solid transparent;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-}
-
-.form-control:active,
-.form-control:focus {
-  background: #eff1f4;
-  outline: none;
-  box-shadow: none;
-  border: 1px solid transparent;
 }
 
 /* Services */
@@ -267,9 +270,11 @@ h6,
 }
 
 .setContact {
-  background-color: none;
-  background: none;
-  border: none;
+  margin-left: 1rem;
+}
+.navbuttons{
+  padding: 1rem;
+  padding-left: 0;
 }
 
 .hider{
@@ -370,6 +375,12 @@ h6,
   .shower{
     display:block;
   }
+  .navbuttons{
+    padding:0;
+  }
+  .navrow{
+    padding: 3rem 1rem 1rem 1rem;
+  }
 }
 
 .custom-navbar .navbar-brand {
@@ -380,7 +391,7 @@ h6,
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 0 0 1rem 0;
+  padding: 0 0 3rem 0;
 }
 
 .footer a {

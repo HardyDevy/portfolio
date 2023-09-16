@@ -26,31 +26,47 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
-
 <body>
 
   <main id="main">
-
-    <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio quickFixWorkSectionBottom">
-      <div class="container">
-        <div class="row mb-5 align-items-center centerTextMobile">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <a href="about.html" ><h2 class="nameTitleThings" >Hi! I'm Devon Hardy</h2></a>
-            <p class="mb-0 subtitletext">Graphic &amp; Web Designer</p>
+    
+    <section class="section">
+      <nav class="container">
+        <div class="row align-items-center centerTextMobile">
+          
+          <div class="col-md-12 col-lg-6 mb-lg-0" data-aos="fade-up">
+            <a class="navbuttons" href="#">Hi</a>
           </div>
-          <div class="row-md-30 col-lg-6 text-lg-end" data-aos="fade-up" data-aos-delay="100">
+          
+          <div class="col-lg-6 text-lg-end navrow" data-aos="fade-up" data-aos-delay="100">
+              <a class="setContact navbuttons" href="about.html">About</a>
+              <a class="setContact navbuttons" href="contact.html">Contact</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <section class="mainpage container">
+          <div class="centerTextMobile" data-aos="fade-up">
+            <a href="about.html" class="nameTitleThings" >Hi! I'm <nobr>Devon Hardy</nobr></a>
+            <p class="subtitletext">Graphic &amp; Web Designer</p>
+          </div>
+      </section>
+          
+      <div class="workbelow container">
+        <a class="subtitletext" href="#workssection"> &darr; Scroll for some work</a>
+      </div>
+
+      <!-- Works Section -->
+      <div class="container workssection" id="workssection">
+        <div class="row align-items-center centerTextMobile">
+      
+          <div class="col-md-12 col-lg-6 mb-lg-0" data-aos="fade-up">
+          </div>
+      
+          <div class="row-md-30 col-lg-6 text-lg-end mb-3" data-aos="fade-up" data-aos-delay="100">
             
             <div id="filters" class="filters">
-              <div class="shower">
-                <button class="btn setContact mb-4 mt-3" onclick="window.open('about.html','_self')"> About</button>
-              <button class="btn setContact mb-4 mt-3" onclick="window.open('contact.html','_self')"> Contact</button>
-              </div>
-              
-              <button class="btn setContact hider" onclick="window.open('about.html','_self')"> About</button>
-              <button class="btn setContact hider" onclick="window.open('contact.html','_self')"> Contact</button>
-            
-              <h8 class="hider" href="#">|</h8>
               <a href="#" data-filter="*" class="active">All</a>
               <a href="#" data-filter=".design">Design</a>
               <a href="#" data-filter=".web">Web</a>
@@ -61,7 +77,7 @@
 
         <div id="portfolio-grid" class="row no-gutter grid_color" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="item design web branding col-lg-4">
+          <div class="item design web col-lg-4">
             <a href="work-single-vipstructures.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>VIP Structures</h3>
@@ -71,7 +87,7 @@
             </a>
           </div>
 
-          <div class="item design branding col-lg-4">
+          <div class="item design col-lg-4">
             <a href="work-single-capstone.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Senior Capstone Project</h3>
@@ -102,7 +118,7 @@
             </a>
           </div>
 
-          <div class="item branding design col-lg-4">
+          <div class="item design col-lg-4">
             <a href="work-single-eddys.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Eddy's Restaraunt</h3>
@@ -133,7 +149,7 @@
             </a>
           </div>
 
-          <div class="item branding design col-lg-4">
+          <div class="item design col-lg-4">
             <a href="work-single-coastal.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Coastal</h3>
@@ -167,8 +183,6 @@
         </div>
       </div>
     </section><!-- End  Works Section -->
-
-   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -189,6 +203,7 @@
       </div>
     </div>
   </footer>
+  <!-- End Footer -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

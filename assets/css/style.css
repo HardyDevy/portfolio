@@ -68,10 +68,6 @@ h6,
   font-size: 16px;
 }
 
-.heading {
-  font-size: 28px;
-}
-
 .nameTitleThings{
   font-family: "blanket", sans-serif;
   font-weight: 700;
@@ -80,6 +76,15 @@ h6,
   color: #000;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important; 
+}
+
+.heroimage{
+  padding: 2rem;
+  width: 20rem;
+}
+.heroimagewrap{
+  display: flex;
+  justify-content: center;
 }
 
 .section {
@@ -98,6 +103,64 @@ h6,
 .workssection{
   padding-top: 2.5rem;
 }
+
+.quickFixNavSingle {
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  text-align:left;
+  padding-left: 2rem;
+}
+
+.quickFixWorkSectionbottom {
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.quickFixStickyText {
+  margin-left: 1rem;
+}
+
+.setServicesSize {
+  min-height: 4rem;
+}
+
+.setTitleColor {
+  color:#000;
+}
+
+.setContact {
+  margin-left: 1rem;
+}
+.navbuttons{
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.aboutgrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.contactgrid{
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  align-items: baseline;
+}
+
+.aboutimg{
+  max-width: 25rem;
+}
+
+.mobileHeroCentering{
+  /*  */
+}
+.mobileFooterCentering{
+
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.7rem;
+}
+
 
 .filters a {
   text-decoration: none;
@@ -245,148 +308,6 @@ h6,
   padding-top: 10px;
 }
 
-.quickFixNavSingle {
-  margin-bottom: 2rem;
-  align-items: flex-start;
-  text-align:left;
-  padding-left: 2rem;
-}
-
-.quickFixWorkSectionbottom {
-  margin-bottom: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-.quickFixStickyText {
-  margin-left: 1rem;
-}
-
-.setServicesSize {
-  min-height: 4rem;
-}
-
-.setTitleColor {
-  color:#000;
-}
-
-.setContact {
-  margin-left: 1rem;
-}
-.navbuttons{
-  padding: 1rem;
-  padding-left: 0;
-}
-
-.hider{
-  /* display: none; */
-}
-.shower{
-  display: none;
-}
-
-.aboutgrid{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.contactgrid{
-  display: grid;
-  grid-template-columns: 5fr 6fr;
-  align-items: baseline;
-}
-
-.aboutimg{
-  max-width: 25rem;
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-/* Custom Navmenu */
-.custom-navmenu {
-  background: #0d1e2d;
-}
-
-.custom-navmenu .custom-menu,
-.custom-navmenu .custom-menu li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.custom-navmenu .custom-menu li {
-  margin-bottom: 0;
-  font-size: 20px;
-}
-
-.custom-navmenu .custom-menu li a {
-  color: #fff;
-  padding: 10px 0 !important;
-}
-
-.custom-navmenu .custom-menu li a:hover {
-  text-decoration: none;
-}
-
-.custom-navmenu .custom-menu li.active a {
-  text-decoration: underline;
-}
-
-.custom-navmenu h3 {
-  font-size: 20px;
-  color: #fff;
-}
-
-.custom-navmenu p {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.custom-navmenu a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.custom-navmenu a:hover {
-  color: #fff;
-}
-
-/* Custom Navbar */
-.custom-navbar {
-  padding-top: 50px;
-  width: 100%;
-}
-
-.centerTextMobile {
-  text-align: left;
-}
-
-@media (max-width: 991px) {
-  .custom-navbar>.container {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .centerTextMobile {
-    text-align: center !important;
-  }
-  .hider{
-    display:none;
-  }
-  .shower{
-    display:block;
-  }
-  .navbuttons{
-    padding:0;
-  }
-  .navrow{
-    padding: 3rem 1rem 1rem 1rem;
-  }
-}
-
-.custom-navbar .navbar-brand {
-  font-size: 1.7rem;
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -396,6 +317,11 @@ h6,
 
 .footer a {
   color: #000;
+}
+
+.footerCopyright{
+  display: flex;
+  align-items: center;
 }
 
 .social a {
@@ -419,4 +345,39 @@ h6,
 
 .social a:hover {
   color: #000;
+}
+
+@media (max-width: 991px) {
+  .custom-navbar>.container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .centerTextMobile {
+    text-align: center !important;
+  }
+  .navbuttons{
+    padding:0;
+  }
+  .navrow{
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .nameTitleThings{
+    font-size: 4rem;
+  }
+  .mobileHeroCentering{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .mobileFooterCentering{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3;
+  }
+  
+  .workbelow{
+    text-align: inherit;
+  }
 }

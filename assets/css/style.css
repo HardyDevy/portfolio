@@ -1,13 +1,14 @@
-/**
-* Template Name: MyPortfolio - v4.9.1
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+:root {
+  --heroText: swear-display, serif;
+  --buttonText: "realistnarrow", sans-serif;
+  --subtitleText: "realistnarrow", sans-serif;
+  --bgcolor: #afbbff;
+  --lightText: rgb(240, 240, 240);
+  --darkerText: #cbcbcb;
+  --hoverText: #a0a0a0;
+  --darkestText: #5a5a5a;
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 html{
   scroll-behavior: smooth;
 }
@@ -15,38 +16,26 @@ body {
   font-family: "stevie-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #0d1e2d;
-  background-color: #fefcfd;
+  color: var(--darkerText);
 }
 .grid_color{
   /* background-color: #efefef; */
 }
 
 nav{
-  
+  padding-bottom: 1.5rem;
 }
 
 a {
-  color: #777;
+  color: var(--darkerText);
   text-decoration: none;
+}
+a:hover {
+  color: var(--hoverText);
 }
 
 p{
-
-}
-.subtitletext{
-  font-size: large;
-margin: 0;
-padding: 0;
-}
-.companytext{
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  margin-bottom: 0rem;
-}
-
-a:hover {
-  color: #000;
+  color: var(--darkestText);
 }
 
 h1,
@@ -69,18 +58,45 @@ h6,
 }
 
 .nameTitleThings{
-  font-family: "blanket", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: var(--heroText);
+  font-weight: 800;
+  font-style: italic;
   font-size: 6.5rem;
-  color: #000;
+  line-height: 3.5rem;
+  color: var(--lightText);
   padding-bottom: 0 !important;
   margin-bottom: 0 !important; 
 }
+.nameTitleThings:hover{
+  color: var(--lightText);
+}
+.helloim{
+  font-size: 4.5rem;
+}
+
+.subtitletext{
+  font-family: var(--subtitleText);
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+  margin-top: .25rem;
+  padding: 0;
+  color: var(--darkerText);
+}
+.btntext{
+  font-family: var(--buttonText);
+  font-weight: 400;
+  font-style: normal;
+}
+.companytext{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0rem;
+}
 
 .heroimage{
-  padding: 2rem;
-  width: 20rem;
+  margin-left: 8rem;
+  width: 25rem;
 }
 .heroimagewrap{
   display: flex;
@@ -90,18 +106,29 @@ h6,
 .section {
   padding: 3rem 0;
 }
+.sectiontop{
+  padding: 2.5rem 0;
+}
 .mainpage{
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+}
+.bgcolor{
+  /* background-color: var(--bgcolor); */
+  background-image: url(../img/Devon-HeroImage-stickersandmeandthings.jpg);
+  background-repeat: no-repeat;
+  background-position: center -2rem;
+  background-size: cover;
 }
 .workbelow{
   text-align: end;
   padding-right: 3vh;
-  margin-bottom: 15vh;
+  margin-bottom: 9vh;
 }
 .workssection{
-  padding-top: 2.5rem;
+  padding-top: 5rem;
 }
 
 .quickFixNavSingle {
@@ -164,7 +191,7 @@ h6,
 
 .filters a {
   text-decoration: none;
-  color: #000;
+  color: var(--darkestText);
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -188,7 +215,7 @@ h6,
 }
 
 .filters a.active {
-  color: #000;
+  color: var(--darkestText);
 }
 
 .filters a.active:before {
@@ -356,10 +383,12 @@ h6,
     text-align: center !important;
   }
   .navbuttons{
-    padding:0;
+    margin: 0;
   }
   .navrow{
-    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
   .nameTitleThings{
     font-size: 4rem;
@@ -379,5 +408,9 @@ h6,
   
   .workbelow{
     text-align: inherit;
+    display: none;
+  }
+  .mainpage{
+    min-height: auto;
   }
 }

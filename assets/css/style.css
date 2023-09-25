@@ -2,7 +2,7 @@
   --heroText: swear-display, serif;
   --buttonText: "realistnarrow", sans-serif;
   --subtitleText: "realistnarrow", sans-serif;
-  --bgcolor: #afbbff;
+  --bgcolor: #187845;
   --lightText: rgb(240, 240, 240);
   --darkerText: #cbcbcb;
   --hoverText: #a0a0a0;
@@ -16,7 +16,7 @@ body {
   font-family: "stevie-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--darkerText);
+  color: var(--darkestText);
 }
 .grid_color{
   /* background-color: #efefef; */
@@ -105,6 +105,7 @@ h6,
 
 .section {
   padding: 3rem 0;
+  padding-bottom: 0;
 }
 .sectiontop{
   padding: 2.5rem 0;
@@ -116,8 +117,7 @@ h6,
   padding-top: 5rem;
 }
 .bgcolor{
-  /* background-color: var(--bgcolor); */
-  background-image: url(../img/Devon-HeroImage-stickersandmeandthings.jpg);
+  background-image: url(../img/Devon-HeroImage-flowers.jpg);
   background-repeat: no-repeat;
   background-position: center -2rem;
   background-size: cover;
@@ -130,6 +130,35 @@ h6,
 .workssection{
   padding-top: 5rem;
 }
+
+/* Single Work Pages */
+.singleworkcolumn{
+  width: 90%;
+  text-align: center;
+}
+.singleworkcolumndescription{
+  margin: 3rem auto;
+  max-width: 55vw;
+  font-size: large;
+}
+.singleworktitle{
+  font-family: var(--heroText);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+  
+}
+.singleworkdescription{
+  font-weight: lighter;
+}
+.singleworkcolumnitems{
+  margin: 3rem auto;
+  max-height: 90vh;
+}
+
+
+/* End Single Work Pages */
 
 .quickFixNavSingle {
   margin-bottom: 2rem;
@@ -181,7 +210,7 @@ h6,
   /*  */
 }
 .mobileFooterCentering{
-
+/*  */
 }
 
 .custom-navbar .navbar-brand {
@@ -335,6 +364,15 @@ h6,
   padding-top: 10px;
 }
 
+.alignItemsCenter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mobileJustifyContentCenter{
+/*  */
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -379,6 +417,16 @@ h6,
     padding-right: 0;
     padding-left: 0;
   }
+
+  .alignItemsCenter{
+    flex-direction: column;
+  }
+  .mobileJustifyContentCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .centerTextMobile {
     text-align: center !important;
   }
@@ -412,5 +460,14 @@ h6,
   }
   .mainpage{
     min-height: auto;
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+  .bgcolor{
+    background-image: url(../img/Devon-HeroImage-noflowers.jpg);
+  }
+
+  .singleworkcolumndescription{
+    max-width: 80vw;
   }
 }

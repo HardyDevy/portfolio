@@ -3,6 +3,7 @@
   --buttonText: "realistnarrow", sans-serif;
   --subtitleText: "realistnarrow", sans-serif;
   --bgcolor: #187845;
+  --mainbgcolor: #fefefe;
   --lightText: rgb(240, 240, 240);
   --darkerText: #cbcbcb;
   --hoverText: #a0a0a0;
@@ -11,12 +12,14 @@
 
 html{
   scroll-behavior: smooth;
+  background-color: var(--bgcolor);
 }
 body {
   font-family: "stevie-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--darkestText);
+  background-color: var(--mainbgcolor);
 }
 .grid_color{
   /* background-color: #efefef; */
@@ -32,6 +35,20 @@ a {
 }
 a:hover {
   color: var(--hoverText);
+}
+
+button{
+  border:none;
+  border-radius: 2rem;
+  padding: .75rem;
+  margin: .5rem;
+  background-color: #e8e8e8;
+  text-decoration: none;
+  font-family: var(--buttonText);
+  color: var(--hoverText);
+}
+button:hover{
+  color: var(--darkestText);
 }
 
 p{
@@ -51,6 +68,11 @@ h6,
 }
 .h3 {
   font-size: 20px;
+}
+.selectedworks{
+  font-family: var(--buttonText);
+  color: var(--darkestText);
+  /* font-size: ; */
 }
 
 .h4 {
@@ -116,7 +138,15 @@ h6,
   align-items: center;
   padding-top: 5rem;
 }
-.bgcolor{
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+.upshadow{
+  box-shadow: 0 -20px 20px -20px rgba(0,0,0,.8);
+}
+.herobgcolor{
   background-image: url(../img/Devon-HeroImage-flowers.jpg);
   background-repeat: no-repeat;
   background-position: center -2rem;
@@ -128,7 +158,11 @@ h6,
   margin-bottom: 9vh;
 }
 .workssection{
-  padding-top: 5rem;
+  padding: 5rem 0 0 0;
+  margin-top: 5rem 0 0 0;
+  }
+.nonstickybgcolor{
+  background-color: var(--mainbgcolor);
 }
 
 /* Single Work Pages */
@@ -137,7 +171,7 @@ h6,
   text-align: center;
 }
 .singleworkcolumndescription{
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
   max-width: 55vw;
   font-size: large;
 }
@@ -147,7 +181,7 @@ h6,
   font-style: italic;
   font-size: 4.5rem;
   padding-bottom: 1rem;
-  
+  max-width: 90vw;
 }
 .singleworkdescription{
   font-weight: lighter;
@@ -156,7 +190,6 @@ h6,
   margin: 3rem auto;
   max-height: 90vh;
 }
-
 
 /* End Single Work Pages */
 
@@ -204,6 +237,13 @@ h6,
 
 .aboutimg{
   max-width: 25rem;
+}
+
+.capstonebanddescriptors{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
 }
 
 .mobileHeroCentering{
@@ -270,7 +310,7 @@ h6,
 }
 
 .item .item-wrap:after {
-  z-index: 2;
+  /* z-index: 2; */
   position: absolute;
   content: "";
   top: 0;
@@ -369,9 +409,25 @@ h6,
   flex-direction: row;
   align-items: center;
 }
+.justifyContentCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nopadding{
+  padding: 0;
+}
+.nobottommargin{
+  margin-bottom: 0;
+}
+.maxwidth90vw{
+  max-width: 90vw;
+}
 .mobileJustifyContentCenter{
 /*  */
 }
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -469,5 +525,6 @@ h6,
 
   .singleworkcolumndescription{
     max-width: 80vw;
+    margin: 0 auto;
   }
 }

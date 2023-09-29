@@ -40,6 +40,24 @@
         </div>
       </nav>
       <!-- End Nav -->
+      <!-- Modals -->
+      <div id="1" class="modal">
+        <div class="modal-content2">
+            <div class="closecontainer"><span class="close">&times;</span></div>
+            <span class="rightarrow" onclick="nextImage(1)">&#8594;</span>
+            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/ManUtdTributeTOP.jpg"/></div>
+            <span class="leftarrow" onclick="previousImage(1)">&#8592;</span>
+        </div>
+      </div>
+      <div id="2" class="modal">
+        <div class="modal-content2">
+            <div class="closecontainer"><span class="close">&times;</span></div>
+            <span class="rightarrow" onclick="nextImage(2)">&#8594;</span>
+            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/ManUtdTributeBottom.jpg"/></div>
+            <span class="leftarrow" onclick="previousImage(2)">&#8592;</span>
+        </div>
+      </div>
+      <!-- End Modals -->
 
       <div class="site-section pb-0">
         <div class="container">
@@ -53,15 +71,16 @@
                   <div class="singleworkcolumndescription nobottommargin maxwidth90vw">
                       <h3 class="singleworktitle">Manchester United Tribute Page</h3>
                       <p class="singleworkdescription"><span>A website designed and developed during a front-end development course</span></p>
-                      <button class="item-wrap fancybox" onclick=" window.open('./index-manutdtribute.html')"> Visit Full Site</button>
+                      <button class="item-wrap fancybox btnstyles" onclick=" window.open('./index-manutdtribute.html')"> Visit Full Site</button>
                   </div>
 
-                  <div class="col-md-12 my-5">
-                    <img src="assets/img/ManUtdTributeTOP.jpg" alt="Image" class="img-fluid">
+                  <div class="col-md-12 my-2">
+                    <button data-modal="#1" class="imagebutton modalbtn"><img src="assets/img/ManUtdTributeTOP.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
-                  <div class="col-md-12 my-3">
-                    <img src="assets/img/ManUtdTributeBottom.jpg" alt="Image" class="img-fluid">
+                  <div class="col-md-12 my-2">
+                    <button data-modal="#2" class="imagebutton modalbtn"><img src="assets/img/ManUtdTributeBottom.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
+
               </div>
             </div>
             </div>
@@ -88,6 +107,11 @@
      </div>
    </footer>
    <!-- End Footer -->
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

@@ -1,15 +1,7 @@
-/**
-* Template Name: MyPortfolio - v4.9.1
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
-  /**
-   * Easy selector helper function
-   */
+  /** Easy selector helper function */
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -19,9 +11,7 @@
     }
   }
 
-  /**
-   * Easy event listener function
-   */
+  /** Easy event listener function */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -33,20 +23,10 @@
     }
   }
 
-  /**
-   * Easy on scroll event listener 
-   */
+  /** Easy on scroll event listener */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
-
-  /**
-   * burgerMenu
-   */
-  const burgerMenu = select('.burger')
-  on('click', '.burger', function(e) {
-    burgerMenu.classList.toggle('active');
-  })
 
   /**
    * Porfolio isotope and filter
@@ -78,9 +58,7 @@
 
   });
 
-  /**
-   * Animation on scroll
-   */
+  /** Animation on scroll */
   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
@@ -91,3 +69,41 @@
   });
 
 })()
+
+$(".modalbtn").on("click", function() { // when item with class of modalbtn is clicked, fire function
+  var modal = $(this).data("modal"); // sets modal var equal to data attribute
+  $(modal).show(); // opens up modal (much code hidden here by jQuery)
+});
+
+$(".modal").on("click", function(e) { // sets up click function
+  var className = e.target.className; // var className set to event target
+  if(className === "modal" || className === "modal-content2" || className === "modal-image-container" || className === "closecontainer" || className === "close"){
+    $(this).closest(".modal").hide(); // if click on one of those, then hide the modal
+  }
+});
+
+function nextImage(int) {
+  let id = int.toString();
+  var modal = document.getElementById(id);
+  modal.style="display: none;";
+  int+=1;
+  let id2 = int.toString();
+  var modal = document.getElementById(id2);
+  if (modal === null){
+    int-=1;
+    let id2 = int.toString();
+    var modal = document.getElementById(id2);
+  }
+  modal.style="display: block;";
+}
+
+function previousImage(int) {
+  let id = int.toString();
+  var modal = document.getElementById(id);
+  modal.style="display: none;";
+  int-=1;
+  if (int < 1){int = 1;}
+  let id2 = int.toString();
+  var modal = document.getElementById(id2);
+  modal.style="display: block;";
+}

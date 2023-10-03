@@ -28,6 +28,8 @@
 </head>
 
 <body>
+  <p id="numModals" class="hide">5</p> <!-- Number of Modals --> <!-- Javascript not working -->
+
   <main id="main">
 
     <section class="section">
@@ -42,6 +44,7 @@
       <!-- End Nav -->
 
       <!-- Modals -->
+
       <div id="1" class="modal">
         <div class="modal-content2">
             <div class="closecontainer"><span class="close">&times;</span></div>
@@ -70,7 +73,10 @@
         <div class="modal-content2">
             <div class="closecontainer"><span class="close">&times;</span></div>
             <span class="rightarrow" onclick="nextImage(4)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta.jpg"/></div>
+            <div class="modal-image-container mx-0">
+              <img class="img-fluid modal-images modal-dualimages" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta.jpg"/>
+              <img class="img-fluid modal-images modal-dualimages" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg"/>
+            </div>
             <span class="leftarrow" onclick="previousImage(4)">&#8592;</span>
         </div>
       </div>
@@ -78,16 +84,8 @@
         <div class="modal-content2">
             <div class="closecontainer"><span class="close">&times;</span></div>
             <span class="rightarrow" onclick="nextImage(5)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(5)">&#8592;</span>
-        </div>
-      </div>
-      <div id="6" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(6)">&#8594;</span>
             <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/WordCloudAdTemplate3.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(6)">&#8592;</span>
+            <span class="leftarrow" onclick="previousImage(5)">&#8592;</span>
         </div>
       </div>
       <!-- End Modals -->
@@ -119,10 +117,10 @@
                     <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-6 my-2">
-                    <button data-modal="#5" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#6" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/WordCloudAdTemplate3.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button data-modal="#5" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/WordCloudAdTemplate3.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   
               </div>

@@ -28,6 +28,17 @@ body {
 nav{
   padding-bottom: 1.5rem;
 }
+.bottomnav{
+  width: fit-content;
+  padding: .5rem;
+  padding-left: 1.5rem;
+  background-color: rgb(248, 248, 248);
+  border-radius: 10rem;
+}
+.navtoTopLayer{
+  position: relative;
+  z-index: 200;
+}
 
 a {
   color: var(--darkerText);
@@ -107,6 +118,27 @@ h6,
   font-size: 4.5rem;
 }
 
+.otherTitleThings{
+    font-family: var(--heroText);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+    color: var(--darkestText);
+    padding-bottom: 0;
+    margin-bottom: 0; 
+}
+.otherTitleThingsSmall{
+  font-family: var(--heroText);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: var(--darkestText);
+  padding-bottom: 0;
+  margin-bottom: 0;  
+}
+
 .subtitletext{
   font-family: var(--subtitleText);
   font-weight: 400;
@@ -120,6 +152,19 @@ h6,
   font-family: var(--buttonText);
   font-weight: 400;
   font-style: normal;
+}
+
+.aboutdescriptioncontainer{
+  min-height: 90vh;
+  padding-bottom: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutdescription{
+  font-weight: lighter;
+  font-size: 24px;
 }
 .companytext{
   padding-top: 2rem;
@@ -170,8 +215,8 @@ h6,
   margin-bottom: 10vh;
 }
 .workssection{
-  padding: 5rem 0 0 0;
-  margin-top: 5rem 0 0 0;
+  padding: 0;
+  margin-top: 2rem 0 0 0;
   }
 .nonstickybgcolor{
   background-color: var(--mainbgcolor);
@@ -237,10 +282,6 @@ h6,
   padding-left: 0;
 }
 
-.aboutgrid{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
 .contactgrid{
   display: grid;
   grid-template-columns: 5fr 6fr;
@@ -421,11 +462,20 @@ h6,
   flex-direction: row;
   align-items: center;
 }
-.justifyContentCenter{
+.justifyContentCenterRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.justifyContentCenterColumn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.spaceAround{
+  justify-content: space-around;
 }
 .nopadding{
   padding: 0;
@@ -438,6 +488,9 @@ h6,
 }
 .mobileJustifyContentCenter{
 /*  */
+}
+.hideOnMobile{
+  /*  */
 }
 
 
@@ -480,68 +533,6 @@ h6,
   color: #000;
 }
 
-@media (max-width: 991px) {
-  .custom-navbar>.container {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .alignItemsCenter{
-    flex-direction: column;
-  }
-  .mobileJustifyContentCenter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .centerTextMobile {
-    text-align: center !important;
-  }
-  .navbuttons{
-    margin: 0;
-  }
-  .navrow{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    z-index: 100;
-  }
-  .nameTitleThings{
-    font-size: 4rem;
-  }
-  .mobileHeroCentering{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .mobileFooterCentering{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 3;
-  }
-  
-  .workbelow{
-    text-align: inherit;
-    display: none;
-  }
-  .mainpage{
-    min-height: auto;
-    padding-top: 0;
-    margin-bottom: 1rem;
-  }
-  .bgcolor{
-    background-image: url(../img/Devon-HeroImage-noflowers.jpg);
-  }
-
-  .singleworkcolumndescription{
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-}
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -574,6 +565,9 @@ h6,
   max-height: 90vh;
   max-width: 70vw;
 }
+.modal-dualimages{
+  max-width: 35vw;
+}
 
 .closecontainer{
   min-height: 94vh;
@@ -601,3 +595,76 @@ h6,
   text-decoration: none;
   cursor: pointer;
 }
+
+.hide{
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .custom-navbar>.container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .alignItemsCenter{
+    flex-direction: column;
+  }
+  .mobileJustifyContentCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .centerTextMobile {
+    text-align: center !important;
+  }
+  .navbuttons{
+    margin: 0;
+  }
+  .navrow{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 100;
+  }
+  .bottomnav{
+    display: none;
+  }
+  .nameTitleThings{
+    font-size: 4rem;
+  }
+  .mobileHeroCentering{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .mobileFooterCentering{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3;
+  }
+  
+  .workbelow{
+    text-align: inherit;
+    display: none;
+  }
+  .mainpage{
+    min-height: auto;
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+  .bgcolor{
+    background-image: url(../img/Devon-HeroImage-noflowers.jpg);
+  }
+  .upshadow{
+    box-shadow: none;
+  }
+
+  .singleworkcolumndescription{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+

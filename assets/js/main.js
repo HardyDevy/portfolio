@@ -83,27 +83,29 @@ $(".modal").on("click", function(e) { // sets up click function
 });
 
 function nextImage(int) {
-  let id = int.toString();
+  let id = int;
   var modal = document.getElementById(id);
   modal.style="display: none;";
   int+=1;
-  let id2 = int.toString();
+  let id2 = int;
   var modal = document.getElementById(id2);
   if (modal === null){
     int-=1;
-    let id2 = int.toString();
+    let id2 = int;
     var modal = document.getElementById(id2);
   }
   modal.style="display: block;";
 }
 
 function previousImage(int) {
-  let id = int.toString();
+  let id = int;
   var modal = document.getElementById(id);
   modal.style="display: none;";
   int-=1;
-  if (int < 1){int = 1;}
+  var NumModalsStr = document.getElementById("numModals");
+  let numModals = NumModalsStr.innerText;
+  if (int < 1){int = numModals}
   let id2 = int.toString();
-  var modal = document.getElementById(id2);
-  modal.style="display: block;";
+  var modal2 = document.getElementById(id2);
+  modal2.style="display: block;";
 }

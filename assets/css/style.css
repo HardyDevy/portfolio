@@ -633,6 +633,9 @@ justify-content: space-between;
     padding-right: 0;
     padding-left: 0;
   }
+  .item-wrap{
+    margin: 0rem 1rem ;
+  }
 
   .alignItemsCenter{
     flex-direction: column;
@@ -661,6 +664,9 @@ justify-content: space-between;
   .nameTitleThings{
     font-size: 4rem;
   }
+  .otherTitleThings{
+    padding-top: 2rem;
+  }
   .mobileHeroCentering{
     display: grid;
     align-items: center;
@@ -683,7 +689,7 @@ justify-content: space-between;
     padding-top: 0;
     margin-bottom: 1rem;
   }
-  .bgcolor{
+  .herobgcolor{
     background-image: url(../img/Devon-HeroImage-noflowers.jpg);
   }
   .upshadow{
@@ -694,5 +700,21 @@ justify-content: space-between;
     max-width: 80vw;
     margin: 0 auto;
   }
+  .rightarrow,.leftarrow, .dotsContainer{
+    display: none;
+  }
+  .closecontainer{
+    max-width: 1rem;
+    display: none;
+  }
+  .modal-content2{
+    padding: 0;
+  }
+  .modal-images{
+    max-height: 70vh;
+    max-width: 90vw;
+  }
+  .modal-dualimages {
+    max-width: 50vw;
 }
 

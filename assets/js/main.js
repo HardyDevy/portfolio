@@ -77,7 +77,7 @@ $(".modalbtn").on("click", function() { // when item with class of modalbtn is c
 
 $(".modal").on("click", function(e) { // sets up click function
   var className = e.target.className; // var className set to event target
-  if(className === "modal" || className === "modal-content2" || className === "modal-image-container" || className === "closecontainer" || className === "close"){
+  if(className === "modal" ||  className === "justifyContentCenterRow" || className === "modal-content2" || className === "modal-image-container" || className === "closecontainer" || className === "close"){
     $(this).closest(".modal").hide(); // if click on one of those, then hide the modal
   }
 });
@@ -90,7 +90,7 @@ function nextImage(int) {
   let id2 = int;
   var modal = document.getElementById(id2);
   if (modal === null){
-    int-=1;
+    int = 1;
     let id2 = int;
     var modal = document.getElementById(id2);
   }
@@ -108,4 +108,14 @@ function previousImage(int) {
   let id2 = int.toString();
   var modal2 = document.getElementById(id2);
   modal2.style="display: block;";
+}
+
+function skipToImage(currentid, nextid) {
+  let id = currentid;
+  var modal = document.getElementById(id);
+  modal.style="display: none;";
+
+  let id2 = nextid;
+  var modal = document.getElementById(id2);
+  modal.style="display: block;";
 }

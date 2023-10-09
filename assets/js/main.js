@@ -148,10 +148,10 @@ function buildModal(currentid){
   fillHTML += modalarray[currentpage][(id-1)]; //This should be accessing an array to get the images
 
   if(id > 1){
-    fillHTML += '/></div><span class="leftarrow" onclick="buildModal('+(id-1)+')">&#8592;</span></div></div>';
+    fillHTML += '></div><span class="leftarrow" onclick="buildModal('+(id-1)+')">&#8592;</span></div></div>';
   }
   else{
-    fillHTML += '/></div><span class="leftarrow" onclick="buildModal('+(numModals)+')">&#8592;</span></div></div>';
+    fillHTML += '></div><span class="leftarrow" onclick="buildModal('+(numModals)+')">&#8592;</span></div></div>';
   }
 
   modal.className = "modal";

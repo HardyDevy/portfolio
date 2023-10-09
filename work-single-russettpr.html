@@ -31,6 +31,7 @@
   <main id="main">
 
     <p id="numModals" class="hide">5</p> <!-- Number of Modals -->
+    <p id="currentPage" class="hide">1</p> <!-- Current Page -->
 
     <section class="section">
        <!-- Nav -->
@@ -42,57 +43,12 @@
         </div>
       </nav>
       <!-- End Nav -->
-
+      <!-- Modals -->
+    <div class="modalbuttons">
+      <div id="modal"></div>
+    </div>
+      <!-- End Modals -->
       <div class="site-section pb-0">
-
-        <!-- Modals -->
-        <div id="1" class="modal">
-          <div class="modal-content2">
-              <div class="closecontainer"><span class="close">&times;</span></div>
-              <span class="rightarrow" onclick="nextImage(1)">&#8594;</span>
-              <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/russettpr/Hardy PDF Portfolio-11 copy.png"/></div>
-              <span class="leftarrow" onclick="previousImage(1)">&#8592;</span>
-          </div>
-        </div>
-
-        <div id="2" class="modal">
-          <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-              <span class="rightarrow" onclick="nextImage(2)">&#8594;</span>
-              <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/russettpr/Hardy PDF Portfolio-12 copy.png"/></div>
-              <span class="leftarrow" onclick="previousImage(2)">&#8592;</span>
-          </div>
-        </div>
-
-        <div id="3" class="modal">
-          <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-              <span class="rightarrow" onclick="nextImage(3)">&#8594;</span>
-              <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/russettpr/Hardy PDF Portfolio-13 copy.png"/></div>
-              <span class="leftarrow" onclick="previousImage(3)">&#8592;</span>
-          </div>
-        </div>
-
-        <div id="4" class="modal">
-          <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-              <span class="rightarrow" onclick="nextImage(4)">&#8594;</span>
-              <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/russettpr/Hardy PDF Portfolio-14 copy.png"/></div>
-              <span class="leftarrow" onclick="previousImage(4)">&#8592;</span>
-          </div>
-        </div>
-
-        <div id="5" class="modal">
-          <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-              <span class="rightarrow" onclick="nextImage(5)">&#8594;</span>
-              <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/russettpr/Hardy PDF Portfolio-15 copy.png"/></div>
-              <span class="leftarrow" onclick="previousImage(5)">&#8592;</span>
-          </div>
-        </div>
-
-        <!-- End Modals -->
-
         <div class="container">
           <div class="row justify-content-center">
   
@@ -107,19 +63,19 @@
                   </div>
 
                   <div class="my-2">
-                    <button data-modal="#1" class="imagebutton modalbtn"><img src="assets/img/russettpr/Hardy PDF Portfolio-11 copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(1, 'russettpr')"><img src="assets/img/russettpr/HardyPDFPortfolio-11copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#2" class="imagebutton modalbtn"><img src="assets/img/russettpr/Hardy PDF Portfolio-12 copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(2, 'russettpr')"><img src="assets/img/russettpr/HardyPDFPortfolio-12copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#3" class="imagebutton modalbtn"><img src="assets/img/russettpr/Hardy PDF Portfolio-13 copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button" class="imagebutton modalbtn" onclick="buildModal(3, 'russettpr')"><img src="assets/img/russettpr/HardyPDFPortfolio-13copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/russettpr/Hardy PDF Portfolio-14 copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(4, 'russettpr')"><img src="assets/img/russettpr/HardyPDFPortfolio-14copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#5" class="imagebutton modalbtn"><img src="assets/img/russettpr/Hardy PDF Portfolio-15 copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(5, 'russettpr')"><img src="assets/img/russettpr/HardyPDFPortfolio-15copy.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
   
               </div>
@@ -163,6 +119,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/data.js"></script>
 </body>
 </html>

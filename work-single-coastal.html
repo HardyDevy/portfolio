@@ -31,6 +31,7 @@
   <main id="main">
 
     <p id="numModals" class="hide">3</p> <!-- Number of Modals -->
+    <p id="currentPage" class="hide">5</p> <!-- Current Page -->
 
     <section class="section">
       <!-- Nav -->
@@ -42,34 +43,11 @@
         </div>
       </nav>
       <!-- End Nav -->
-
       <!-- Modals -->
-      <div id="1" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(1)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/coastal/CoastalLogo.JPG"/></div>
-            <span class="leftarrow" onclick="previousImage(1)">&#8592;</span>
-        </div>
-      </div>
-      <div id="2" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(2)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/coastal/Screen Shot 2022-02-06 at 7.13.51 PM.png"/></div>
-            <span class="leftarrow" onclick="previousImage(2)">&#8592;</span>
-        </div>
-      </div>
-      <div id="3" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(3)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/coastal/CoastalAd.JPG"/></div>
-            <span class="leftarrow" onclick="previousImage(3)">&#8592;</span>
-        </div>
-      </div>
+          <div class="modalbuttons">
+            <div id="modal"></div>
+          </div>
       <!-- End Modals -->
-
       <div class="site-section pb-0">
         <div class="container">
           <div class="row justify-content-center">
@@ -85,25 +63,14 @@
                   </div>
 
                   <div class="col-md-12 my-2">
-                    <button data-modal="#1" class="imagebutton modalbtn"><img src="assets/img/coastal/CoastalLogo.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(1)"><img src="assets/img/coastal/CoastalLogo.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#2" class="imagebutton modalbtn"><img src="assets/img/coastal/Screen Shot 2022-02-06 at 7.13.51 PM.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn"onclick="buildModal(2)"><img src="assets/img/coastal/CoastalCan.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#3" class="imagebutton modalbtn"><img src="assets/img/coastal/CoastalAd.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn"onclick="buildModal(3)"><img src="assets/img/coastal/CoastalAd.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
-  
-                  <div class="col-md-12">
-                    <img src="" alt="Image" class="img-fluid singleworkcolumnitems">
-                  </div>
-                  <div class="col-md-12">
-                    <img src="" alt="Image" class="img-fluid singleworkcolumnitems">
-                  </div>
-                  <div class="col-md-12">
-                    <img src="" alt="Image" class="img-fluid singleworkcolumnitems">
-                  </div>
-                  
   
               </div>
             </div>
@@ -147,6 +114,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js"></script>
 
 </body>
 

@@ -29,6 +29,7 @@
 
 <body>
   <p id="numModals" class="hide">5</p> <!-- Number of Modals -->
+  <p id="currentPage" class="hide">0</p> <!-- Current Page -->
 
   <main id="main">
 
@@ -42,99 +43,12 @@
         </div>
       </nav>
       <!-- End Nav -->
-
       <!-- Modals -->
-
-      <div id="1" class="modal">
-        <div class="justifyContentCenterRow">
-        <div class="dotsContainer">
-            <span class="dots">●</span>
-            <span class="dots" onclick="skipToImage(1, 2)">○</span>
-            <span class="dots" onclick="skipToImage(1, 3)">○</span>
-            <span class="dots" onclick="skipToImage(1, 4)">○</span>
-            <span class="dots" onclick="skipToImage(1, 5)">○</span>
-        </div>
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(1)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/2023SummerInternscopy Large.jpeg"/></div>
-            <span class="leftarrow" onclick="previousImage(1)">&#8592;</span>
-        </div>
-      </div>
-      </div>
-      <div id="2" class="modal">
-        <div class="justifyContentCenterRow">
-       <div class="dotsContainer">
-            <span class="dots" onclick="skipToImage(2, 1)">○</span>
-            <span class="dots">●</span>
-            <span class="dots" onclick="skipToImage(2, 3)">○</span>
-            <span class="dots" onclick="skipToImage(2, 4)">○</span>
-            <span class="dots" onclick="skipToImage(2, 5)">○</span>
-        </div>
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(2)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/June2023_WelcomingNewHires.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(2)">&#8592;</span>
-        </div>
-      </div>
-      </div>
-      <div id="3" class="modal">
-        <div class="justifyContentCenterRow">
-       <div class="dotsContainer">
-          <span class="dots" onclick="skipToImage(3, 1)">○</span>
-          <span class="dots" onclick="skipToImage(3, 2)">○</span>
-          <span class="dots">●</span>
-          <span class="dots" onclick="skipToImage(3, 4)">○</span>
-          <span class="dots" onclick="skipToImage(3, 5)">○</span>
-      </div>
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(3)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/BestCompaniesToWorkForNewYork2023.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(3)">&#8592;</span>
-        </div>
-      </div>
-      </div>
-      <div id="4" class="modal">
-        <div class="justifyContentCenterRow">
-        <div class="dotsContainer">
-          <span class="dots" onclick="skipToImage(4, 1)">○</span>
-          <span class="dots" onclick="skipToImage(4, 2)">○</span>
-          <span class="dots" onclick="skipToImage(4, 3)">○</span>
-          <span class="dots">●</span>
-          <span class="dots" onclick="skipToImage(4, 5)">○</span>
-      </div>
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(4)">&#8594;</span>
-            <div class="modal-image-container mx-0">
-              <img class="img-fluid modal-images modal-dualimages" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta.jpg"/>
-              <img class="img-fluid modal-images modal-dualimages" src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg"/>
-            </div>
-            <span class="leftarrow" onclick="previousImage(4)">&#8592;</span>
-        </div>
-      </div>
-      </div>
-      <div id="5" class="modal">
-        <div class="justifyContentCenterRow">
-        <div class="dotsContainer">
-          <span class="dots" onclick="skipToImage(5, 1)">○</span>
-          <span class="dots" onclick="skipToImage(5, 2)">○</span>
-          <span class="dots" onclick="skipToImage(5, 3)">○</span>
-          <span class="dots" onclick="skipToImage(5, 4)">○</span>
-          <span class="dots">●</span>
-      </div>
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(5)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/VIP Structures/WordCloudAdTemplate3.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(5)">&#8592;</span>
-        </div>
-      </div>
-      </div>
+    <div class="modalbuttons">
+      <div id="modal"></div>
+    </div>
       <!-- End Modals -->
-
+      <!-- Main -->
       <div class="site-section pb-0">
         <div class="container">
           <div class="row justify-content-center">
@@ -146,26 +60,26 @@
   
                   <div class="singleworkcolumndescription">
                       <h3 class="singleworktitle">VIP Structures</h3>
-                      <p class="singleworkdescription"><span>Advertisements for current clients and for VIP, social media content for VIP, website development and maintenance</span></p>
+                      <p class="singleworkdescription"><span>Advertisements for VIP, social media content and future planning for VIP, website development and maintenance</span></p>
                   </div>
   
                   <div class="my-2">
-                    <button data-modal="#1" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/2023SummerInternscopy Large.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(1)" ><img src="assets/img/VIPStructures/2023SummerInternscopyLarge.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#2" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/June2023_WelcomingNewHires.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(2)"><img src="assets/img/VIPStructures/June2023_WelcomingNewHires.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#3" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/BestCompaniesToWorkForNewYork2023.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(3)"><img src="assets/img/VIPStructures/BestCompaniesToWorkForNewYork2023.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-6 my-2">
-                    <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(4)"><img src="assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-6 my-2">
-                    <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/SpecificRecruitingPosts_7-24-23_Insta2.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(4)"><img src="assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta2.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="my-2">
-                    <button data-modal="#5" class="imagebutton modalbtn"><img src="assets/img/VIP Structures/WordCloudAdTemplate3.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(5)"><img src="assets/img/VIPStructures/WordCloudAdTemplate3.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   
               </div>
@@ -175,7 +89,7 @@
         </div>
 
     </section>
-  </main><!-- End #main -->
+  </main><!-- End Main -->
 
    <!-- ======= Footer ======= -->
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center my-3"><i class="bi bi-arrow-up-short">Back to top</i></a>
@@ -211,6 +125,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js"></script>
 
 </body>
 

@@ -31,6 +31,7 @@
   <main id="main">
 
     <p id="numModals" class="hide">7</p> <!-- Number of Modals -->
+    <p id="currentPage" class="hide">2</p> <!-- Current Page -->
 
     <section class="section">
        <!-- Nav -->
@@ -43,64 +44,10 @@
       </nav>
       <!-- End Nav -->
       <!-- Modals -->
-      <div id="1" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(1)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/toriphotoedit.png"/></div>
-            <span class="leftarrow" onclick="previousImage(1)">&#8592;</span>
+        <div class="modalbuttons">
+          <div id="modal"></div>
         </div>
-      </div>
-      <div id="2" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(2)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/Hardy_HumanSubject.jpg"/></div>
-            <span class="leftarrow" onclick="previousImage(2)">&#8592;</span>
-        </div>
-      </div>
-      <div id="3" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(3)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/IMG_4144.JPG"/></div>
-            <span class="leftarrow" onclick="previousImage(3)">&#8592;</span>
-        </div>
-      </div>
-      <div id="4" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(4)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/DSC_0048_1 copy.jpeg"/></div>
-            <span class="leftarrow" onclick="previousImage(4)">&#8592;</span>
-        </div>
-      </div>
-      <div id="5" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(5)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/DSC_0034 copy.jpeg"/></div>
-            <span class="leftarrow" onclick="previousImage(5)">&#8592;</span>
-        </div>
-      </div>
-      <div id="6" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(6)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/DSC_0059_edit copy.jpeg"/></div>
-            <span class="leftarrow" onclick="previousImage(6)">&#8592;</span>
-        </div>
-      </div>
-      <div id="7" class="modal">
-        <div class="modal-content2">
-            <div class="closecontainer"><span class="close">&times;</span></div>
-            <span class="rightarrow" onclick="nextImage(7)">&#8594;</span>
-            <div class="modal-image-container"><img class="img-fluid modal-images" src="assets/img/photography/DSC_0796.JPG"/></div>
-            <span class="leftarrow" onclick="previousImage(7)">&#8592;</span>
-        </div>
-      </div>
       <!-- End Modals -->
-
       <!-- Main Work -->
       <div class="site-section pb-0">
         <div class="container">
@@ -117,25 +64,25 @@
                   </div>
   
                   <div class="col-md-12 my-2">
-                    <button data-modal="#1" class="imagebutton modalbtn"><img src="assets/img/photography/toriphotoedit.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(1)" ><img src="assets/img/photography/toriphotoedit.png" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#2" class="imagebutton modalbtn"><img src="assets/img/photography/Hardy_HumanSubject.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(2)" ><img src="assets/img/photography/Hardy_HumanSubject.jpg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#3" class="imagebutton modalbtn"><img src="assets/img/photography/IMG_4144.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(3)" ><img src="assets/img/photography/IMG_4144.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#4" class="imagebutton modalbtn"><img src="assets/img/photography/DSC_0048_1 copy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(4)" ><img src="assets/img/photography/DSC_0048_1copy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#5" class="imagebutton modalbtn"><img src="assets/img/photography/DSC_0034 copy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(5)" ><img src="assets/img/photography/DSC_0034copy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#6" class="imagebutton modalbtn"><img src="assets/img/photography/DSC_0059_edit copy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(6)" ><img src="assets/img/photography/DSC_0059_editcopy.jpeg" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <div class="col-md-12 my-2">
-                    <button data-modal="#7" class="imagebutton modalbtn"><img src="assets/img/photography/DSC_0796.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
+                    <button class="imagebutton modalbtn" onclick="buildModal(7)" ><img src="assets/img/photography/DSC_0796.JPG" alt="Image" class="img-fluid singleworkcolumnitems"></button>
                   </div>
                   <!-- <div class="col-md-12 my-2">
                     <img src="assets/img/photography/DSC_0022.JPG" alt="Image" class="img-fluid singleworkcolumnitems">
@@ -182,6 +129,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js"></script>
 
 </body>
 

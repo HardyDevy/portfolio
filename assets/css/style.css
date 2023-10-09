@@ -159,7 +159,7 @@ h6,
   font-style: normal;
 }
 
-.aboutdescriptioncontainer{
+.aboutdescriptioncontainer, .aboutskillsdescriptioncontainer{
   min-height: 90vh;
   padding-bottom: 40vh;
   text-align: center;
@@ -167,15 +167,29 @@ h6,
   flex-direction: column;
   justify-content: center;
 }
+.aboutskillsdescriptioncontainer{
+  min-height: 70vh;
+  justify-content:center;
+  border-style: solid;
+  border-color: var(--darkText);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  margin-bottom: 30vh;
+}
 .aboutdescription{
   font-weight: lighter;
   font-size: 24px;
 }
-.companytext{
+/* .companytext{
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   margin-bottom: 0rem;
+} */
+.companylogos{
+  margin: 0 1.5rem;
 }
+
 .contactdescriptioncontainer{
   min-height: 59vh;
   padding-top: 10vh;
@@ -295,6 +309,13 @@ h6,
   display: grid;
   grid-template-columns: 5fr 6fr;
   align-items: baseline;
+}
+.skillsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.skillsText{
+  font-size: 18px;
 }
 
 .aboutimg{
@@ -476,7 +497,7 @@ h6,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items:baseline;
 }
 .justifyContentCenterRowBetween{
 justify-content: space-between;
@@ -506,10 +527,6 @@ justify-content: space-between;
   /*  */
 }
 
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 .footer {
   padding: 0 0 3rem 0;
 }

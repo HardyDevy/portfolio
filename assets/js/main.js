@@ -70,6 +70,7 @@
 
 })()
 
+// Old Modals
 $(".modalbtn").on("click", function() { // when item with class of modalbtn is clicked, fire function
   var modal = $(this).data("modal"); // sets modal var equal to data attribute
   $(modal).show(); // opens up modal (much code hidden here by jQuery)
@@ -110,12 +111,59 @@ function previousImage(int) {
   modal2.style="display: block;";
 }
 
-function skipToImage(currentid, nextid) {
-  let id = currentid;
-  var modal = document.getElementById(id);
-  modal.style="display: none;";
+function skipToImage(nextid) {
+  buildModal(nextid, 'vipstructures');
+}
 
-  let id2 = nextid;
-  var modal = document.getElementById(id2);
-  modal.style="display: block;";
+// New Modals
+function buildModal(currentid){
+
+  let id = currentid;
+  let numModals = document.getElementById("numModals").innerText;
+  let currentpage = document.getElementById("currentPage").innerText;
+  var modal = document.getElementById("modal");
+
+  let fillHTML = '<div class="justifyContentCenterRow"><div class="dotsContainer">';
+  
+  for (i=0; i<id-1; i++){
+    fillHTML +='<span class="dots" onclick="skipToImage('+(i+1)+')">○</span>' //Empty circles until the current id
+    console.log(i);
+  }
+
+  fillHTML += '<span class="dots">●</span>'; //Filled circle on the current id
+  
+  for (j=id; j<numModals; j++){
+    fillHTML +='<span class="dots" onclick="skipToImage('+(j+1)+')">○</span>' //Empty circles until the last modal
+  }
+
+  fillHTML += '</div><div class="modal-content2"><div class="closecontainer"><span class="close">&times;</span></div>'
+  
+  if(id != numModals){
+  fillHTML += '<span class="rightarrow" onclick="buildModal('+(id+1)+')">&#8594;</span>'
+  }
+  else{
+    fillHTML += '<span class="rightarrow" onclick="buildModal('+(1)+')">&#8594;</span>'
+  }
+
+  fillHTML += modalarray[currentpage][(id-1)]; //This should be accessing an array to get the images
+
+  if(id > 1){
+    fillHTML += '/></div><span class="leftarrow" onclick="buildModal('+(id-1)+')">&#8592;</span></div></div>';
+  }
+  else{
+    fillHTML += '/></div><span class="leftarrow" onclick="buildModal('+(numModals)+')">&#8592;</span></div></div>';
+  }
+
+  modal.className = "modal";
+  modal.style = "display:block;";
+  modal.innerHTML = fillHTML;
+}
+
+document.onclick= function(e) { // Close modals
+  var className = e.target.className;
+  if(className === "modal" ||  className === "justifyContentCenterRow" || className === "modal-content2" || className === "modal-image-container" || className === "closecontainer" || className === "close"){
+    var modal = document.getElementById("modal");
+    modal.style = "display: none;"
+    modal.innerHTML = "";
+  }
 }

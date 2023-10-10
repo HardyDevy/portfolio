@@ -11,11 +11,16 @@ body {
 
 main {
     text-align: center;
+    
 }
 
 img {
     height: 20rem ;
     width: 20rem ;
+    border-style: solid;
+    border-color:#bbad9a;
+    border-width: .2rem;
+    border-radius: 1rem;
 }
 
 h1 {
@@ -27,7 +32,7 @@ h1 {
     padding-top: .75rem;
     margin-top: 0;
     border-radius: 10px;
-
+    filter: drop-shadow(0px 0px 6px #869fab);
 }
 .housetext {
 color: aliceblue;
@@ -52,22 +57,21 @@ margin-top: 0;
 
 section.top {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr .2fr 1.8fr;
     text-align: center;
     align-items: center;
     margin-top: 2rem;
 }
 
-section.bottom {
+.bottom {
     display: grid;
     align-items: center;
     text-align: center;
     min-height: 25rem;
     padding: 2rem;
     margin: 5%;
-    margin-top: 1.5rem;
-    background-color:rgb(90, 70, 48) ;
+    margin-top: 4.5rem;
+    background-color:rgb(145, 126, 105) ;
     border-radius: 20px;
     
   }
@@ -83,8 +87,12 @@ section.bottom {
     align-items: center;
     flex-direction: column;
     background-color: #faebd7;
-    border-radius: 20px;
     padding: 1.5rem;
+    border-style: solid;
+    border-color:#bbad9a;
+    border-width: .2rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 0px 6px #869fab);
 }
 .qpbottom{
     display: flex;
@@ -94,6 +102,7 @@ section.bottom {
     border-radius: 20px;
     padding: 1.5rem;
     padding-bottom: .5rem;
+    filter: drop-shadow(10px 10px 4px #6a5946);
 }
 .quote {
     display: flex;
@@ -144,6 +153,20 @@ button.circle:hover {
     background-color: #c2af94;
 }
 
+.checkOut{
+    min-height: 85vh;
+    display: none;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-align: end;
+    min-width: 20vw;
+    color: aliceblue;
+    margin: .25rem 5.5rem 0 0;
+}
+.hideWithoutCat{
+    display: none;
+}
+
 @media only screen and (max-width: 720px) {
 section.bottom {
     padding: 1rem;
@@ -158,5 +181,8 @@ img{
 }
 .selecter {
     padding: 1rem 5rem;
+}
+.checkOut{
+    display: none;
 }
 }

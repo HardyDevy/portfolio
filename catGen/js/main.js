@@ -27,13 +27,20 @@
   };
 
 function saveCat() {
+    let bottomSection = document.getElementById('bottomSection');
+    bottomSection.style = "display:grid";
+
+    if (window.innerWidth > 720){
+    let checkOut = document.getElementById('checkOut');
+    checkOut.style = "display:flex";
+    }
+
     let savedImg = document.getElementById('newcat').src;
     let savedText = document.getElementById('newquote').innerText;
 
     let savedCat = {img:savedImg, quote:savedText};
-    // const savedCat = [{"img": savedImg}, {"quote": savedText}];
-    return savedCat;
     
+    return savedCat;
 }
 
   const catFactory = (obj) => {

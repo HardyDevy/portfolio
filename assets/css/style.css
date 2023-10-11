@@ -122,7 +122,6 @@ h6,
 .helloim{
   font-size: 4.5rem;
 }
-
 .otherTitleThings{
     font-family: var(--heroText);
     font-weight: 800;
@@ -143,7 +142,6 @@ h6,
   padding-bottom: 0;
   margin-bottom: 0;  
 }
-
 .subtitletext{
   font-family: var(--subtitleText);
   font-weight: 400;
@@ -167,6 +165,9 @@ h6,
   flex-direction: column;
   justify-content: center;
 }
+.bottomaboutdescriptioncontainer{
+  padding-bottom: 0;
+}
 .aboutskillsdescriptioncontainer{
   min-height: 70vh;
   justify-content:center;
@@ -176,6 +177,7 @@ h6,
   padding: 1rem;
   margin: 1.5rem;
   margin-bottom: 30vh;
+  background-color: var(--mainbgcolor);
 }
 .aboutdescription{
   font-weight: lighter;
@@ -231,6 +233,14 @@ h6,
   background-position: center -2rem;
   background-size: cover;
 }
+.justFlowersBg{
+  background-image: url(../img/JustFlowersHuge.jpg);
+  background-position: center;
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
 .workbelow{
   text-align: end;
   padding-right: 3vh;
@@ -496,6 +506,10 @@ h6,
 }
 .mt-10{
   margin-top: 10rem;
+}
+.mx-3{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .alignItemsCenter{

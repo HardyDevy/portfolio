@@ -2,7 +2,7 @@ const vipstructures = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/VIPStructures/2023SummerInternscopyLarge.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/VIPStructures/June2023_WelcomingNewHires.jpg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/VIPStructures/BestCompaniesToWorkForNewYork2023.jpg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images modal-dualimages" src=assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta.jpg/><img class="img-fluid modal-images modal-dualimages" src="assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta2.jpg"',
+    '<div class="modal-image-container"><img class="img-fluid modal-images modal-dualimages" src=assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta.jpg><img class="img-fluid modal-images modal-dualimages" src="assets/img/VIPStructures/SpecificRecruitingPosts_7-24-23_Insta2.jpg"',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/VIPStructures/WordCloudAdTemplate3.jpg'
 ]
 

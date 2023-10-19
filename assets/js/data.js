@@ -43,8 +43,8 @@ const eddys = [
 ]
 
 const coastal = [
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalLogo.JPG',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalCan.JPG',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalLogoFixed.jpg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalCanFixed.jpg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalAd.JPG'
 ]
 

@@ -33,12 +33,18 @@ nav{
 }
 .bottomnavLeft{
 padding: 0 10px;
-/* color: var(--darkestText); */
+color: var(--darkerText);
+}
+.bottomnavLeft:hover{
+  color: var(--darkestText);
 }
 .bottomnavbackground{
+  min-height: 3rem;
   padding: .5rem .75rem;
   background-color: rgb(248, 248, 248);
-  border-radius: 10rem;
+  border-radius: 1rem;
+  margin: 0rem 1.5rem;
+  box-shadow: 0 0px 15px -5px rgba(0,0,0,.4);
 }
 .navtoTopLayer{
   position: relative;
@@ -96,11 +102,6 @@ h6,
 .h3 {
   font-size: 20px;
 }
-.selectedworks{
-  font-family: var(--buttonText);
-  color: var(--darkestText);
-  /* font-size: ; */
-}
 
 .h4 {
   font-size: 16px;
@@ -121,6 +122,16 @@ h6,
 }
 .helloim{
   font-size: 4.5rem;
+}
+.selectedWorks{
+  font-family: var(--heroText);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--darkestText);
+  padding-bottom: 0;
+  margin-bottom: 0; 
 }
 .otherTitleThings{
     font-family: var(--heroText);
@@ -501,6 +512,9 @@ h6,
   padding-top: 10px;
 }
 
+.py-2{
+  padding: 2rem 0 !important;
+}
 .my-10{
   margin: 10rem 0;
 }
@@ -595,7 +609,7 @@ justify-content: space-between;
   width: 100%;
   overflow: hidden;
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
   backdrop-filter: blur(5px);
 }
 

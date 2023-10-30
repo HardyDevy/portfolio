@@ -239,7 +239,7 @@ h6,
   box-shadow: 0 -20px 20px -20px rgba(0,0,0,.8);
 }
 .herobgcolor{
-  background-image: url(../img/Devon-HeroImage-flowers.jpg);
+  /* background-image: url(../img/Devon-HeroImage-flowers.jpg); */
   background-repeat: no-repeat;
   background-position: center -2rem;
   background-size: cover;
@@ -250,6 +250,18 @@ h6,
   background-position: top;
   background-repeat: repeat-y;
   background-size: contain;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .workbelow{
@@ -747,6 +759,9 @@ justify-content: space-between;
   }
   .herobgcolor{
     background-image: url(../img/Devon-HeroImage-noflowers.jpg);
+  }
+  #background-video{
+     display: none; 
   }
   .upshadow{
     box-shadow: none;

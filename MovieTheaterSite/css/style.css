@@ -1,0 +1,299 @@
+body{
+  background-color: rgb(11, 3, 3);
+  margin: 0;
+}
+.logo{
+  padding-left: .75rem;
+  max-width: 8rem;
+}
+p,h1,h2,h3,h4,h5{
+  font-family: articulat-cf, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: whitesmoke;
+  display: block;
+  margin: 0;
+}
+p{
+  font-family: articulat-cf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+  color: grey;
+}
+
+.topnav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 40vw 1rem 0;
+}
+
+.movie-listings{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(18, 18, 18);
+}
+.movie-wrapper{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem 2rem;
+  width: 100%;
+  max-width: 1400px;
+}
+.movie{
+  margin:  1rem auto .5rem auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* background-color: rgb(28, 28, 28); */
+  background-image: linear-gradient(to right, rgb(23, 23, 23), rgb(35,35,35));
+  min-height: 16rem;
+}
+.moviedescription{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+.movieTitleAndMore{
+  display: flex;
+  align-items: baseline;
+}
+.movieTitleAndMore p{
+  padding-left: .5rem;
+}
+.movieTitle{
+  font-size: 20px;
+  padding-bottom: .5rem;
+}
+.movieText{
+  color: #bbb;
+  font-size: 14px;
+  padding-bottom: .5rem;
+}
+.movieShowTimeDiv{
+  border: #bbb;
+  border-width: .5px;
+  border-radius: 1rem;
+  border-style: solid;
+  padding: .75rem .5rem .5rem .5rem;
+  margin-top: .75rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+}
+.movieShowTimeDiv div{
+  padding: 0 .5rem;
+}
+.movieShowTimeText{
+  padding-bottom: .25rem;
+}
+
+.showingsBtn{
+  font-weight: bold;
+  max-width: 8rem;
+  padding: .5rem .25rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.showingsBtn:hover{
+  background-color: rgb(222, 222, 222);
+  cursor:pointer;
+}
+
+.poster{
+    max-width: 10rem;
+    height: auto;
+    max-height: 15rem;
+    border: #f2f2f2;
+    border-style: solid;
+}
+
+
+/* Eric Styles */
+.slideshow {
+  
+  }
+  .slideshow-wrapper {
+    position: relative; /*-- this allows children to be position absolutely --*/
+    margin: 0 2rem;
+  }
+  .slideshow-wrapper img {
+    width: 100%; /*-- makes slideshow responsive in size --*/
+    
+  }
+  .prev, .next {
+    cursor: pointer; /*-- changes hover cursor to the hand --*/
+    position: absolute; /*-- positions arrows absolutely--*/
+    top: 50%; /*-- positions arrows half the height of parent from top --*/
+    width: auto; /*-- matches width of parent --*/
+    padding: 16px; /*-- adds a little bit of space--*/
+    margin-top: -22px; /*-- adjusts position by height of arrows --*/
+    color: rgb(244, 244, 244); /*-- sets color for contrast --*/
+    font-weight: bold; /*-- selects heavier font --*/
+    font-size: 18px; /*-- sets arrow font size --*/
+    transition: 0.6s ease; /*-- sets transition speed for arrow hover--*/
+    border-radius: 0 3px 3px 0; /*-- slightly rounds inside borders --*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /*-- prevents users from selecting buttons --*/
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .captiontext {
+    background: rgba(0,0,0,0.9);
+    color: rgba(245, 245, 245, 0.7);
+    font-family: articulat-cf, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    padding: .75rem 1rem .5rem 1rem;
+    position: absolute;
+    bottom: .35rem; 
+    width: 100%;
+    text-align: start;
+  }
+  .captionbutton{
+    border-color: rgb(215, 215, 215);
+    color:  rgb(215, 215, 215);
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: .5rem;
+    margin: 0 1rem;
+    min-width: 7rem;
+  }
+  .captionbutton:hover{
+    border-color: rgb(172, 172, 172);
+    color: rgb(172, 172, 172);
+  }
+  
+  .numberof {
+    color: #f2f2f2; /*-- sets color to almost white --*/
+    font-size: 12px; /*-- sets font size --*/
+    padding: 8px 12px; /*-- sets numberof padding --*/
+    position: absolute; /*-- positions numberof text absolutely--*/
+    top: 0; /*-- sets position hard to the top--*/
+  }
+  .text-center {
+    display: flex;
+  }
+  .indicator {
+    cursor:pointer; /*-- changes hover cursor to the hand --*/
+    height: auto; /*-- sets height of pics --*/
+    width: 25%; /*-- sets width of pics --*/
+    margin: 0 2px; /*-- adds margin between pics --*/
+    background-color: #bbb; /*-- sets background color to light gray --*/
+    display: inline-block; /*-- displays in a horizontal line --*/
+    transition: all 250ms ease-in-out; /*-- allows opacity change to take time --*/
+    opacity: .5;
+  }
+  .indicator img {
+    width: 100% !important;
+  }
+  .active, .indicator:hover {
+    opacity: 1;
+  }
+  /* End Eric Styles */
+
+  footer{
+    background-color: rgb(28, 28, 28);
+    padding: .75rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  footer p{
+    color: grey;
+    font-size: small;
+  }
+
+  @media screen and (max-width : 1280px){
+    .movieTitleAndMore{
+      flex-direction:column;
+    }
+    .movieTitleAndMore p{
+      padding-left: 0;
+    }
+    .movie-wrapper{
+      grid-template-columns: 1fr;
+  } 
+  }
+
+
+  @media screen and (max-width : 980px){
+    .topnav{
+      margin: 1rem 1rem 1rem 0;
+    }
+    .movie-wrapper{
+        grid-template-columns: 1fr;
+    } 
+  }
+  
+  @media screen and (max-width : 720px){
+    .topnav{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      min-height: 40vh;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .topnav a{
+      border: #bbb;
+      border-style: solid;
+      border-radius: 20px;
+      padding: .5rem;
+      min-width: 10rem;
+    }
+    .logo{
+      padding: 0;
+    }
+    .slideshow {
+      display: none;
+    }
+
+    .movie{
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem 0;
+        background-image: linear-gradient(to top, rgb(15,15,15), rgb(35,35,35));
+    }
+    .moviedescription{
+      align-items: center;
+      text-align: justify;
+    }
+    .movieTitleAndMore{
+      flex-direction:column;
+      align-items: center;
+    }
+    .movieTitle{
+      font-size: 18px;
+    }
+    .movieShowTimeDiv{
+      text-align: center;
+    }
+    .showingsBtn{
+      max-width: 20rem;
+      width: 100%;
+    }
+}

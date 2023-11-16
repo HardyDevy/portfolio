@@ -48,6 +48,15 @@ const coastal = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalAd.JPG'
 ]
 
+const posters = [
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day9-October27.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day15-Nov2.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day11-October29copy.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day23-November10.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day8-October26.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day18-November5.png'
+]
+
 const modalarray = [
- vipstructures, russettpr, photography, occ, eddys, coastal
+ vipstructures, russettpr, photography, occ, eddys, coastal, posters
 ]

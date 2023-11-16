@@ -194,11 +194,6 @@ h6,
   font-weight: lighter;
   font-size: 24px;
 }
-/* .companytext{
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  margin-bottom: 0rem;
-} */
 .companylogos{
   margin: 0 1.5rem;
 }
@@ -239,7 +234,6 @@ h6,
   box-shadow: 0 -20px 20px -20px rgba(0,0,0,.8);
 }
 .herobgcolor{
-  /* background-image: url(../img/Devon-HeroImage-flowers.jpg); */
   background-repeat: no-repeat;
   background-position: center -2rem;
   background-size: cover;
@@ -352,6 +346,15 @@ h6,
 }
 .contactmelinks{
   padding: 1.5rem;
+  margin: 1rem;
+  min-width: 30vw;
+  border-style: solid;
+  border-color: var(--darkText);
+  border-radius: 1rem;
+}
+.contactmelinks:hover{
+  border-color: var(--darkerText);
+  transition: .4s !important;
 }
 
 .aboutimg{

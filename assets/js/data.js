@@ -49,12 +49,12 @@ const coastal = [
 ]
 
 const posters = [
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day9-October27.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day15-Nov2.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day11-October29copy.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day23-November10.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day8-October26.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day18-November5.png'
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day9-October27.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day15-Nov2.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day11-October29copy.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day23-November10.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day8-October26.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day18-November5.jpeg'
 ]
 
 const modalarray = [

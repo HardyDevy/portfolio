@@ -50,10 +50,10 @@ const coastal = [
 
 const posters = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day9-October27.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day40-November27.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day46-December3.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day40-November27.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day46-December3.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day15-Nov2.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day42-November29.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day42-November29.jpeg',
 ]
 
 const modalarray = [

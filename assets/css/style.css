@@ -199,8 +199,21 @@ h6,
 }
 
 .contactdescriptioncontainer{
-  min-height: 59vh;
-  padding-top: 10vh;
+  min-height: 50vh;
+  padding: 1rem;
+  margin: 2rem 0 4rem 0;
+  background-color: var(--lightText);
+  border-radius: 1rem;
+  /* padding-top: 10vh; */
+}
+.contactformitems{
+  margin: 1rem 0;
+  padding: .5rem;
+  border: var(--darkText) solid;
+  border-radius: .5rem;
+}
+.yourmessage{
+  min-width: 70%;
 }
 
 .heroimage{

@@ -28,7 +28,7 @@
 
 <body>
   <main id="main">
-    <div class="col-md-12 col-lg-6 text-start text-lg-end quickFixNavSingle py-5 sticky navtoTopLayer" data-aos="fade-up" data-aos-delay="500">
+    <div class="col-md-12 col-lg-6 text-start text-lg-end quickFixNavSingle pt-5 sticky navtoTopLayer" data-aos="fade-up" data-aos-delay="500">
       <div class="quickFixNavSingle">
         <a href="index.html" class="navbuttons">Home</a>
         <a href="about.html" class="navbuttons">About</a>
@@ -43,9 +43,13 @@
               <div class="container">
                 <div class="row">
                   <div class="contactdescriptioncontainer" data-aos="fade-up" data-aos-delay="0">
-                    <h5 class="mb-0">You can email me at:</h5> 
-                    <a href="mailto: dghardy2020@gmail.com"><h3 class="mt-2">dghardy2020@gmail.com</h3></a>
-                    <p class="mt-5 mb-0">Sorry, but my contact forms are currently unavailable.</p>
+                    <h3 class="otherTitleThingsSmall">Contact Me!</h3>
+                    <form action="https://formsubmit.co/dghardy2020@gmail.com" method="POST">
+                      <input class="contactformitems" type="text" placeholder="Name" name="name" required> <br/>
+                      <input class="contactformitems" type="email" placeholder="Email Address" name="email" required> <br/>
+                      <textarea class="contactformitems yourmessage" placeholder="Your Message" name="message"></textarea> <br/>
+                      <button class="btnstyles" type="submit">Send</button>
+                 </form>
                   </div>
                   </div>
                 </div>

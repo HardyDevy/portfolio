@@ -168,6 +168,19 @@ h6,
   font-style: normal;
 }
 
+.aboutimagecontainter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding-bottom: 40vh;
+  text-align: center;
+}
+.aboutimage{
+  max-width: 70%;
+  border-radius: .5rem;
+}
 .aboutdescriptioncontainer, .aboutskillsdescriptioncontainer{
   min-height: 90vh;
   padding-bottom: 40vh;

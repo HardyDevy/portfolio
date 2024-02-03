@@ -837,5 +837,12 @@ justify-content: space-between;
     text-align: center;
     align-items: center;
   }
+}
+
+@media (min-width: 1900px) {
+
+  .workbelow{
+    text-align: start;
+  }
 
 }

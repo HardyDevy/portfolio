@@ -162,6 +162,15 @@ h6,
   padding: 0;
   color: var(--darkText);
 }
+.categorytitle{
+  font-family: var(--heroText);
+  color: var(--darkerText);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.5rem;
+  max-width: 90vw;
+  padding-top: 4rem;
+}
 .btntext{
   font-family: var(--buttonText);
   font-weight: 400;

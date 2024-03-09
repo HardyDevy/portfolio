@@ -48,7 +48,7 @@ const coastal = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/coastal/CoastalAd.JPG'
 ]
 
-const posters = [
+const musicposters = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day40-November27Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day109-March6Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day110-March7Large.jpeg',
@@ -63,6 +63,33 @@ const posters = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day97-February16Large.jpeg'
 ]
 
-const modalarray = [
- vipstructures, russettpr, photography, occ, eddys, coastal, posters
+const threesixfiveposters = [
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day102-February21Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day107-February29Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day108-March5Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day46-December3Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day52-December9Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day53-December10Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day54-December11(2)Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day55-December12Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day71-January14Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day76-January19Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day85-January28Large.jpeg',
+'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day9-October27Large.jpeg'
 ]
+
+const modalarray = [
+ vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters
+]
+
+
+
+
+
+
+
+
+
+
+
+

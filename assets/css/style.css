@@ -839,14 +839,10 @@ justify-content: space-between;
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
 
   .workbelow{
     text-align: start;
-  }
-
-  .sectiontop{
-    min-height: 100vh;
   }
 
 }

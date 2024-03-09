@@ -49,11 +49,18 @@ const coastal = [
 ]
 
 const posters = [
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day9-October27.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day40-November27.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day46-December3.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day15-Nov2.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365-Day42-November29.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day40-November27Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day109-March6Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day110-March7Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day57-December14Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day64-January7Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day111-March8Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day50-December7Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day15-Nov2Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day93-February5Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day94-February6Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day95-February7Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day97-February16Large.jpeg'
 ]
 
 const modalarray = [

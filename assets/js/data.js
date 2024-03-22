@@ -78,8 +78,15 @@ const threesixfiveposters = [
 '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day9-October27Large.jpeg'
 ]
 
+const moltenmetal = [
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalofNYLogo.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksLogo.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWebsite1.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWebsite2.png'
+]
+
 const modalarray = [
- vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters
+ vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters, moltenmetal
 ]
 
 

@@ -85,8 +85,16 @@ const moltenmetal = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWebsite2.png'
 ]
 
+const merchandise = [
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupFRONT.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupBACK.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupCOLOR-FRONT.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupFRONT.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/DayglowMockupFRONT.png'
+]
+
 const modalarray = [
- vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters, moltenmetal
+ vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters, moltenmetal, merchandise
 ]
 
 

@@ -89,8 +89,7 @@ const merchandise = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupFRONT.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupBACK.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupCOLOR-FRONT.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupFRONT.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/DayglowMockupFRONT.png'
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupFRONT.png'
 ]
 
 const modalarray = [

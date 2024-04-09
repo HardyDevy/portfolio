@@ -80,7 +80,15 @@ const threesixfiveposters = [
 
 const moltenmetal = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalofNYLogo.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksLogo.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-01.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-02.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-06.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-03.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-07.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding_LogoSecondaryblack.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding_LogoSecondarywhite.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-08.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWorksBranding-09.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWebsite1.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MoltenMetal/MoltenMetalWebsite2.png'
 ]
@@ -89,7 +97,10 @@ const merchandise = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupFRONT.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GreerMockupBACK.png',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupCOLOR-FRONT.png',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupFRONT.png'
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/TheLastDinnerPartyMockupFRONT.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/CUTennisClubShirtMockupFront.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/CUTennisClubShirtMockupBack.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GoldenKnightTennisLogo.png'
 ]
 
 const modalarray = [

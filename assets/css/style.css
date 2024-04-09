@@ -332,6 +332,9 @@ h6,
   margin: 3rem auto;
   max-height: 90vh;
 }
+.websiteImage{
+  border: solid #000;
+}
 
 /* End Single Work Pages */
 

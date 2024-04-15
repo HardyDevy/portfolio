@@ -103,8 +103,23 @@ const merchandise = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/MerchMockups/GoldenKnightTennisLogo.png'
 ]
 
+const bebasbubble = [
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble1.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble2.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble3.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble4.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble5.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble6.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble7.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble8.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubble9.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubbleMockup3.jpg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubbleMockup1.jpg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/BebasBubble/BebasBubbleMockup2.jpg',
+]
+
 const modalarray = [
- vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters, moltenmetal, merchandise
+ vipstructures, russettpr, photography, occ, eddys, coastal, musicposters, threesixfiveposters, moltenmetal, merchandise, bebasbubble
 ]
 
 

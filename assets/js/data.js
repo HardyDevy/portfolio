@@ -52,7 +52,10 @@ const musicposters = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day40-November27Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day109-March6Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day110-March7Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day133-April3.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day57-December14Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day118-March15.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day143-April13-NoBorder.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day64-January7Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day111-March8Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day50-December7Large.jpeg',
@@ -64,18 +67,18 @@ const musicposters = [
 ]
 
 const threesixfiveposters = [
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day102-February21Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day107-February29Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day108-March5Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day46-December3Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day52-December9Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day53-December10Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day54-December11(2)Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day55-December12Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day71-January14Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day76-January19Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day85-January28Large.jpeg',
-'<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day9-October27Large.jpeg'
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day46-December3Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day71-January14Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day52-December9Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day107-February29Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day102-February21Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day53-December10Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day54-December11(2)Large.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day122-March19.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day135-April5.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day145-April15.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day147-April17.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/365posters/365-Day9-October27Large.jpeg'
 ]
 
 const moltenmetal = [

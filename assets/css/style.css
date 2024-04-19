@@ -220,6 +220,16 @@ h6,
   margin: 0 1.5rem;
 }
 
+.recommendationsdescriptioncontainer{
+  justify-content:center;
+  border-style: solid;
+  border-color: var(--darkText);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  background-color: var(--mainbgcolor);
+}
+
 .contactdescriptioncontainer{
   min-height: 50vh;
   padding: 1rem;
@@ -279,6 +289,7 @@ h6,
   background-position: top;
   background-repeat: repeat-y;
   background-size: contain;
+  min-width: 100%;
 }
 
 #background-video {
@@ -381,6 +392,10 @@ h6,
 }
 .skillsText{
   font-size: 18px;
+}
+.recommendationsText{
+  font-size: 18px;
+  color: var(--darkerText);
 }
 .contactmelinks{
   padding: 1.5rem;

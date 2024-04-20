@@ -801,6 +801,7 @@ justify-content: space-between;
   }
   .otherTitleThings{
     padding-top: 2rem;
+    font-size: 3.5rem;
   }
   .mobileHeroCentering{
     display: grid;
@@ -866,6 +867,12 @@ justify-content: space-between;
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .quickFixNavSingle {
+    text-align: center;
+    align-items: center;
+    padding-left: 0rem;
   }
 }
 

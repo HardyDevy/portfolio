@@ -51,11 +51,11 @@ const coastal = [
 const musicposters = [
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day149-April19.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day15-Nov2Large.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day118-March15.jpeg',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day150-April20.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day110-March7Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day133-April3.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day57-December14Large.jpeg',
-    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day114-March11.png',
+    '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day118-March15.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day40-November27Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day97-February16Large.jpeg',
     '<div class="modal-image-container"><img class="img-fluid modal-images" src=assets/img/posters/musicposters/365-Day109-March6Large.jpeg',

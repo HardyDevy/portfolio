@@ -182,17 +182,22 @@ h6,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  padding-bottom: 40vh;
+  margin-bottom: 10vh;
   text-align: center;
 }
 .aboutimage{
   max-width: 70%;
   border-radius: .5rem;
 }
+.aboutDarkerBG{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: var(--lightText);
+  border-radius: 2rem;
+}
 .aboutdescriptioncontainer, .aboutskillsdescriptioncontainer{
-  min-height: 90vh;
-  padding-bottom: 40vh;
+  min-height: 30vh;
+  margin-bottom: 10vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -219,7 +224,13 @@ h6,
 .companylogos{
   margin: 0 1.5rem;
 }
-
+.homepage_recommendationsdescriptioncontainer{
+  justify-content:center;
+  text-align: center;
+  padding: 6rem 2rem 6rem 2rem;
+  background-color: var(--mainbgcolor);
+  
+}
 .recommendationsdescriptioncontainer{
   justify-content:center;
   border-style: solid;
@@ -236,7 +247,7 @@ h6,
   margin: 2rem 0 4rem 0;
   background-color: var(--lightText);
   border-radius: 1rem;
-  /* padding-top: 10vh; */
+
 }
 .contactformitems{
   margin: 1rem 0;

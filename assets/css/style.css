@@ -66,7 +66,6 @@ a:hover {
   padding: .75rem 1.5rem;
   margin: .5rem;
   background-color: #eceaea;
-  text-decoration: none;
   font-family: var(--buttonText);
   color: var(--darkText);
 }
@@ -82,6 +81,12 @@ button:hover{
 
 img{
   user-select: none;
+}
+
+hr{
+  align-items: center;
+  max-width: 50%;
+  margin: 5rem auto;
 }
 
 p{
@@ -168,13 +173,15 @@ h6,
   font-weight: 800;
   font-style: italic;
   font-size: 2.5rem;
-  /* max-width: 90vw; */
   padding-top: 4rem;
 }
 .btntext{
   font-family: var(--buttonText);
   font-weight: 400;
   font-style: normal;
+}
+.thisbutton{
+    font-size: 20px;
 }
 
 .aboutimagecontainter{
@@ -197,14 +204,13 @@ h6,
 }
 .aboutdescriptioncontainer, .aboutskillsdescriptioncontainer{
   min-height: 30vh;
-  margin-bottom: 10vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .bottomaboutdescriptioncontainer{
-  padding-bottom: 0;
+  padding-bottom: 3rem;
 }
 .aboutskillsdescriptioncontainer{
   min-height: 70vh;
@@ -227,9 +233,8 @@ h6,
 .homepage_recommendationsdescriptioncontainer{
   justify-content:center;
   text-align: center;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 2rem 2rem 6rem 2rem;
   background-color: var(--mainbgcolor);
-  
 }
 .recommendationsdescriptioncontainer{
   justify-content:center;
@@ -276,7 +281,7 @@ h6,
   padding: 2.5rem 0;
 }
 .mainpage{
-  min-height: 69vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding-top: 5rem;
@@ -405,8 +410,15 @@ h6,
   font-size: 18px;
 }
 .recommendationsText{
-  font-size: 18px;
+  font-size: 20px;
   color: var(--darkerText);
+}
+.recommendationsHomePageText{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  color: var(--darkerText);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contactmelinks{
   padding: 1.5rem;
